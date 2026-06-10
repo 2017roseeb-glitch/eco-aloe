@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eco Best Line | ROSEE ECO</title>
+    <meta name="description" content="로제 에코 베스트 5품목과 전체 카탈로그 제품 소개 페이지입니다." />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body class="quick-always">
+    <header class="product-header">
+      <a class="product-logo" href="index.html" aria-label="ROSEE ECO 홈">
+        <img src="assets/menu-logo.png" alt="ROSEE ECO" />
+      </a>
+      <nav aria-label="제품 페이지 이동">
+        <a class="is-active" href="aloe-shampoo.html" data-i18n="nav.store">스토어</a>
+        <a href="aloe-shampoo.html#catalog" data-i18n="nav.allProducts">전제품</a>
+        <a href="brand.html" data-i18n="nav.brand">브랜드</a>
+      </nav>
+      <div class="language-menu">
+        <button class="language-toggle" type="button" aria-expanded="false" aria-haspopup="true">Language</button>
+        <div class="language-panel" aria-label="Language selection">
+          <button type="button" data-lang="ko">한국어</button>
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="ja">日本語</button>
+          <button type="button" data-lang="zh-CN">中文</button>
+          <button type="button" data-lang="vi">Tiếng Việt</button>
+          <button type="button" data-lang="th">ไทย</button>
+          <button type="button" data-lang="ru">Русский</button>
+          <button type="button" data-lang="uz">Oʻzbek</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="store-banner" aria-label="에코 알로에 스토어 배너">
+        <p>Coming Soon</p>
+      </section>
+
+      <section class="category-section" aria-label="제품 분류">
+        <a class="category-card category-card-hair" href="aloe-shampoo.html?category=hair">
+          <img src="assets/category-hair.jpg" alt="" />
+          <div>
+            <h2 data-i18n="store.hair">헤어</h2>
+            <p data-i18n="store.hairDesc">샴푸 · 컨디셔너 · 헤어 케어</p>
+          </div>
+        </a>
+        <a class="category-card category-card-body" href="aloe-shampoo.html?category=body">
+          <img src="assets/category-body.jpg" alt="" />
+          <div>
+            <h2 data-i18n="store.body">바디</h2>
+            <p data-i18n="store.bodyDesc">클렌저 · 바디 에센스 · 세트</p>
+          </div>
+        </a>
+        <a class="category-card category-card-face" href="aloe-shampoo.html?category=face">
+          <img src="assets/category-face.jpg" alt="" />
+          <div>
+            <h2 data-i18n="store.face">페이스</h2>
+            <p data-i18n="store.faceDesc">데일리 케어라인</p>
+          </div>
+        </a>
+      </section>
+
+      <section class="catalog-section" id="catalog">
+        <div class="catalog-head">
+          <h2 data-catalog-title data-i18n="store.allProducts">전제품</h2>
+        </div>
+        <div class="catalog-layout">
+          <aside class="catalog-category-panel" data-category-panel aria-hidden="true"></aside>
+          <div class="catalog-grid" data-catalog-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="detail-footer">
+      <p data-i18n="footer.company">로제화장품 주식회사 | 대표 : 조종현</p>
+      <p data-i18n="footer.business">사업자등록번호 : 132-86-15385</p>
+      <p data-i18n="footer.address">주소 : 경기도 포천시 소흘읍 죽엽산로 고모리385-89</p>
+      <p>E-mail : <a href="mailto:2017roseeb@gmail.com">2017roseeb@gmail.com</a></p>
+    </footer>
+    <nav class="quick-actions" aria-label="빠른 이동">
+      <a class="quick-action" href="index.html#top" aria-label="홈">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 11.2 12 4l8 7.2" />
+          <path d="M6.5 10.5V20h11v-9.5" />
+          <path d="M10 20v-5h4v5" />
+        </svg>
+      </a>
+      <a class="quick-action" href="proposal.html" aria-label="수출 문의">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7.5h16v11H4z" />
+          <path d="m4.8 8.2 7.2 5.6 7.2-5.6" />
+        </svg>
+      </a>
+    </nav>
+    <script src="i18n.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>

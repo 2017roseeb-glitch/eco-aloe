@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="로제 에코 알로에 브랜드 페이지. 알로에 헤어 케어와 수출 시장을 위한 에코 라인 소개."
+    />
+    <title>ROSEE ECO ALOE | Brand Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ROSEE ECO 메인">
+        <img src="assets/menu-logo.png" alt="ROSEE ECO" />
+      </a>
+      <nav class="main-nav" aria-label="페이지 이동">
+        <a href="#signature" data-i18n="nav.lineup">제품라인</a>
+        <a href="aloe-shampoo.html" data-i18n="nav.store">스토어</a>
+        <a href="brand.html" data-i18n="nav.brand">브랜드</a>
+        <a href="#export" data-i18n="nav.export">수출국가</a>
+        <a href="proposal.html" data-i18n="nav.proposal">수출&협력 제안</a>
+      </nav>
+      <div class="language-menu">
+        <button class="language-toggle" type="button" aria-expanded="false">Language</button>
+        <div class="language-panel" aria-label="언어 선택">
+          <button type="button" data-lang="ko">한국어</button>
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="ja">日本語</button>
+          <button type="button" data-lang="zh-CN">中文</button>
+          <button type="button" data-lang="vi">Tiếng Việt</button>
+          <button type="button" data-lang="th">ไทย</button>
+          <button type="button" data-lang="ru">Русский</button>
+          <button type="button" data-lang="uz">O‘zbek</button>
+        </div>
+      </div>
+      <button class="menu-button" type="button" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="section-pager" aria-label="섹션 이동">
+      <a class="is-active" href="#top" data-section-link="top">01</a>
+      <a href="#signature" data-section-link="signature">02</a>
+      <a href="#brand" data-section-link="brand">03</a>
+      <a href="#export" data-section-link="export">04</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero snap-section" data-section="top" aria-label="에코 알로에 메인">
+        <div class="hero-slides" aria-hidden="true">
+          <div class="hero-slide is-active" style="background-image: url('assets/hero-main-01.jpg')"></div>
+          <div class="hero-slide" style="background-image: url('assets/hero-main-02.jpg')"></div>
+          <div class="hero-slide" style="background-image: url('assets/hero-main-03.jpg')"></div>
+        </div>
+        <div class="hero-copy reveal">
+          <img class="hero-logo" src="assets/eco-logo.png" alt="eco aloe" />
+          <p class="hero-lede" data-i18n="home.hero.tagline">Fresh Aloe Care, Everyday.</p>
+          <p class="hero-text" data-i18n="home.hero.copy">
+            알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 로제의 에코 라인.
+            국내를 넘어 수출 시장에서 다시 찾는 헤어 케어 브랜드로 성장하고 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a href="#signature" data-i18n="home.hero.viewProducts">제품 보기</a>
+            <a href="proposal.html" data-i18n="home.hero.exportInquiry">수출 문의</a>
+          </div>
+          <div class="hero-slide-controls" aria-label="메인 이미지 슬라이드 조작">
+            <button type="button" data-hero-prev aria-label="이전 메인 이미지"></button>
+            <div class="hero-progress" aria-hidden="true"><span data-hero-progress></span></div>
+            <button type="button" data-hero-next aria-label="다음 메인 이미지"></button>
+          </div>
+        </div>
+        <div class="hero-index" aria-label="대표 정보">
+          <p><span>01</span> <b data-i18n="home.hero.point1">Aloe Daily Care</b></p>
+          <p><span>02</span> <b data-i18n="home.hero.point2">1,000,000+ Shampoo Sales</b></p>
+          <p><span>03</span> <b data-i18n="home.hero.point3">Export Ready Line</b></p>
+        </div>
+      </section>
+
+      <section class="signature snap-section" id="signature" data-section="signature" aria-label="에코 시리즈 베스트셀러">
+        <div class="signature-layout">
+          <div class="signature-head reveal">
+            <h2>
+              <span class="signature-kicker" data-i18n="home.signature.kicker">ECO SERIES</span>
+              <span class="signature-main"><span data-i18n="home.signature.title">BEST SELLER</span><i aria-hidden="true"></i></span>
+            </h2>
+            <a href="aloe-shampoo.html"><span data-i18n="home.signature.more">더보기</span> <span>→</span></a>
+          </div>
+          <div class="signature-showcase">
+            <a class="seller-tile reveal" href="aloe-shampoo.html">
+              <img src="assets/best-aloe-shampoo.png" alt="에코 알로에 헤어샴푸" />
+              <div>
+                <h3>Eco Aloe Hair Shampoo</h3>
+                <span>760ml · 13,000원</span>
+              </div>
+            </a>
+            <a class="seller-tile reveal" href="aloe-shampoo.html">
+              <img src="assets/best-black-garlic.png" alt="에코 흑마늘 헤어샴푸" />
+              <div>
+                <h3>Black Garlic Shampoo</h3>
+                <span>760ml · 15,000원</span>
+              </div>
+            </a>
+            <a class="seller-tile reveal" href="argan-oil.html">
+              <img src="assets/best-argan.png" alt="에코 아르간 헤어샴푸" />
+              <div>
+                <h3>Argan Hair Shampoo</h3>
+                <span>760ml · 15,000원</span>
+              </div>
+            </a>
+            <a class="seller-tile reveal" href="aloe-shampoo.html">
+              <img src="assets/best-ginseng.png" alt="에코 진생 리바이탈 헤어샴푸" />
+              <div>
+                <h3>Ginseng Revital</h3>
+                <span>760ml</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-story snap-section" id="brand" data-section="brand" aria-label="브랜드 필름">
+        <div class="film-layout">
+          <div class="film-head reveal">
+            <p class="eyebrow" data-i18n="home.film.eyebrow">BRAND FILM</p>
+            <h2><span class="section-heading-text" data-i18n-html="home.film.title">브랜드<br />필름</span><i aria-hidden="true"></i></h2>
+            <div class="film-controls" aria-label="브랜드 필름 재생 설정">
+              <button type="button" data-film-toggle-play aria-label="정지" title="정지"></button>
+              <button type="button" data-film-toggle-mute aria-label="음향 켜기" title="음향 켜기"></button>
+            </div>
+          </div>
+          <div class="film-stage reveal">
+            <video
+              src="assets/brand-film.mov"
+              data-autoplay-video
+              muted
+              playsinline
+              preload="metadata"
+              aria-label="에코 알로에 브랜드 필름"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="export snap-section" id="export" data-section="export" aria-label="브랜드 지원">
+        <div class="support-layout">
+          <div class="support-head reveal">
+            <p class="eyebrow" data-i18n="home.support.eyebrow">BRAND SUPPORT</p>
+            <h2><span class="section-heading-text" data-i18n-html="home.support.title">브랜드<br />지원</span><i aria-hidden="true"></i></h2>
+          </div>
+          <div class="support-slider reveal" data-support-slider>
+            <div class="support-viewport">
+              <div class="support-slides">
+                <article class="support-slide">
+                  <p class="support-label" data-i18n="home.support.label1">제조 환경</p>
+                  <img src="assets/support-01-manufacturing.png" alt="에코 알로에 제조 환경" />
+                  <div class="support-copy">
+                    <span>01</span>
+                    <h3 data-i18n="home.support.title1">청결한 제조 환경</h3>
+                    <p data-i18n="home.support.desc1">엄격한 위생 관리와 체계적인 생산 공정으로 신뢰할 수 있는 제품을 만듭니다.</p>
+                  </div>
+                </article>
+                <article class="support-slide">
+                  <p class="support-label" data-i18n="home.support.label2">포장 시스템</p>
+                  <img src="assets/support-02-packaging.png" alt="에코 알로에 포장 시스템" />
+                  <div class="support-copy">
+                    <span>02</span>
+                    <h3 data-i18n-html="home.support.title2">안전한<br />포장 시스템</h3>
+                    <p data-i18n="home.support.desc2">튼튼한 포장과 철저한 검수로 국내외 어디든 안전하게 배송합니다.</p>
+                  </div>
+                </article>
+                <article class="support-slide">
+                  <p class="support-label" data-i18n="home.support.label3">마케팅 지원</p>
+                  <img src="assets/support-03-marketing.png" alt="에코 알로에 마케팅 지원 캐릭터" />
+                  <div class="support-copy">
+                    <span>03</span>
+                    <h3 data-i18n="home.support.title3">마케팅 지원</h3>
+                    <p data-i18n="home.support.desc3">POP, 배너 등 다양한 홍보물을 지원하여 브랜드 성장을 함께합니다.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="support-controls" aria-label="브랜드 지원 슬라이드 조작">
+              <button type="button" data-support-prev aria-label="이전 지원 항목">←</button>
+              <span data-support-count>01</span>
+              <button type="button" data-support-next aria-label="다음 지원 항목">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/eco-logo.png" alt="ROSEE ECO" />
+      <div>
+        <p data-i18n="footer.company">로제화장품 주식회사 | 대표 : 조종현</p>
+        <p data-i18n="footer.business">사업자등록번호 : 132-86-15385</p>
+        <p data-i18n="footer.address">주소 : 경기도 포천시 소흘읍 죽엽산로 고모리385-89</p>
+        <p>© ROSEE COSMETICS. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <nav class="quick-actions" aria-label="빠른 이동">
+      <a class="quick-action" href="#top" aria-label="홈">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 11.2 12 4l8 7.2" />
+          <path d="M6.5 10.5V20h11v-9.5" />
+          <path d="M10 20v-5h4v5" />
+        </svg>
+      </a>
+      <a class="quick-action" href="proposal.html" aria-label="수출 문의">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7.5h16v11H4z" />
+          <path d="m4.8 8.2 7.2 5.6 7.2-5.6" />
+        </svg>
+      </a>
+    </nav>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
