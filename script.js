@@ -305,8 +305,8 @@ document.querySelectorAll("[data-copy-email]").forEach((button) => {
   if (!(button instanceof HTMLButtonElement)) return;
 
   const email = button.dataset.copyEmail || "";
-  const defaultLabel = button.dataset.copyLabel || button.textContent || "복사하기";
-  const copiedLabel = button.dataset.copiedLabel || "복사 완료";
+  const getDefaultLabel = () => window.ECO_I18N?.t("proposalContact.copy") || button.textContent || "복사하기";
+  const getCopiedLabel = () => window.ECO_I18N?.t("proposalContact.copied") || "복사 완료";
 
   const fallbackCopy = () => {
     const helper = document.createElement("textarea");
@@ -330,16 +330,16 @@ document.querySelectorAll("[data-copy-email]").forEach((button) => {
       } else {
         fallbackCopy();
       }
-      button.textContent = copiedLabel;
+      button.textContent = getCopiedLabel();
     } catch {
       fallbackCopy();
-      button.textContent = copiedLabel;
+      button.textContent = getCopiedLabel();
     }
 
     window.getSelection()?.removeAllRanges();
 
     window.setTimeout(() => {
-      button.textContent = defaultLabel;
+      button.textContent = getDefaultLabel();
     }, 1600);
   });
 });

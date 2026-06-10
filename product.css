@@ -123,6 +123,39 @@ body.quick-always .quick-actions {
   opacity: 1;
 }
 
+.instagram-link {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 32px;
+  justify-content: center;
+  margin-left: auto;
+  opacity: 0.72;
+  transition: opacity 180ms ease, transform 180ms ease;
+  width: 32px;
+}
+
+.instagram-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.instagram-link svg {
+  fill: none;
+  height: 20px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  width: 20px;
+}
+
+.instagram-link svg circle:last-child {
+  fill: currentColor;
+  stroke: none;
+}
+
 .language-menu {
   position: relative;
 }
@@ -777,7 +810,7 @@ body.is-category-store .catalog-section {
     transform: none;
   }
 
-  .language-menu {
+  .instagram-link {
     margin-left: auto;
   }
 

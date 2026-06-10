@@ -161,8 +161,40 @@ body.quick-always .quick-action,
   opacity: 1;
 }
 
-.language-menu {
+.instagram-link {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 32px;
+  justify-content: center;
   margin-left: auto;
+  opacity: 0.82;
+  transition: opacity 180ms ease, transform 180ms ease;
+  width: 32px;
+}
+
+.instagram-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.instagram-link svg {
+  fill: none;
+  height: 20px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  width: 20px;
+}
+
+.instagram-link svg circle:last-child {
+  fill: currentColor;
+  stroke: none;
+}
+
+.language-menu {
   position: relative;
 }
 
@@ -2057,9 +2089,25 @@ footer p {
     display: block;
   }
 
-  .hero-index,
-  .language-menu {
+  .hero-index {
     display: none;
+  }
+
+  .language-menu {
+    display: block;
+    position: relative;
+  }
+
+  .language-toggle {
+    padding: 8px 4px;
+    white-space: nowrap;
+  }
+
+  .language-panel {
+    max-height: min(420px, calc(100vh - 110px));
+    overflow-y: auto;
+    right: 0;
+    top: calc(100% + 14px);
   }
 
   .signature-layout {
@@ -2112,7 +2160,27 @@ footer p {
 @media (max-width: 640px) {
   .site-header {
     height: 62px;
+    padding: 0 16px;
     top: 14px;
+  }
+
+  .site-header .brand {
+    height: 42px;
+    width: 48px;
+  }
+
+  .instagram-link {
+    height: 30px;
+    width: 30px;
+  }
+
+  .instagram-link svg {
+    height: 18px;
+    width: 18px;
+  }
+
+  .language-toggle {
+    font-size: 12px;
   }
 
   .brand {
