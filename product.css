@@ -875,8 +875,48 @@ body.is-category-store .catalog-section {
 }
 
 @media (max-width: 560px) {
+  .product-header {
+    gap: 8px;
+    padding-inline: 12px;
+  }
+
   .product-logo {
-    width: 58px;
+    flex: 0 0 42px;
+    width: 42px;
+  }
+
+  .product-logo img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .product-header nav {
+    flex: 1 1 auto;
+    gap: 12px;
+    justify-content: center;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .product-header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-header nav a {
+    flex: 0 0 auto;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .instagram-link {
+    height: 28px;
+    width: 28px;
+  }
+
+  .language-toggle {
+    font-size: 11px;
+    white-space: nowrap;
   }
 
   .detail-hero {
@@ -893,12 +933,56 @@ body.is-category-store .catalog-section {
   }
 
   .catalog-grid {
-    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .catalog-section.is-category-view .catalog-grid {
-    grid-template-columns: minmax(0, min(320px, 100%));
-    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+    padding-right: 0;
+  }
+
+  .catalog-card,
+  .catalog-section.is-category-view .catalog-card {
+    min-height: 360px;
+    padding: 12px 10px 14px;
+  }
+
+  .catalog-card img,
+  .catalog-section.is-category-view .catalog-card img {
+    height: 150px;
+    margin-bottom: 12px;
+  }
+
+  .catalog-category {
+    font-size: 10px;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+  }
+
+  .catalog-card h3,
+  .catalog-section.is-category-view .catalog-card h3,
+  .catalog-card.product-strongMist h3,
+  .catalog-card.product-hairColor h3,
+  .catalog-card.product-aloeHairColor h3,
+  .catalog-card.product-limeMintSet h3,
+  .catalog-card.product-bodySet h3 {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .catalog-card p,
+  .catalog-section.is-category-view .catalog-card p {
+    font-size: 11px;
+  }
+
+  .buy-button,
+  .catalog-section.is-category-view .buy-button {
+    font-size: 12px;
+    min-height: 38px;
+    padding-inline: 8px;
   }
 
   .product-thumbs {

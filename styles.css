@@ -2158,6 +2158,10 @@ footer p {
 }
 
 @media (max-width: 640px) {
+  .hero-slide:first-child {
+    background-position: 67% center;
+  }
+
   .site-header {
     height: 62px;
     padding: 0 16px;
