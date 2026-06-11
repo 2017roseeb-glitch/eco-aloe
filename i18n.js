@@ -290,7 +290,7 @@ const siteKo = {
       coatingEssence: "에코 알로에 헤어 코팅 에센스",
       strongMist: "에코 알로에 초강력 헤어미스트",
       arganOil: "에코 알로에 아르간 헤어오일",
-      hairColor: "에코 헤어 칼라크림 새치용",
+      hairColor: "에코 알로에 헤어 칼라크림 새치용",
       aloeHairColor: "에코 알로에 헤어칼라 크림 멋내기용",
       curlingEssence: "에코 알로에 헤어 컬링 에센스",
       silkCurling: "에코 알로에 헤어 실크 컬링 에센스",
