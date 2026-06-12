@@ -658,20 +658,14 @@ body.quick-always .quick-action,
 }
 
 .signature-main {
-  align-items: end;
-  display: inline-flex;
+  display: inline-block;
   font-size: clamp(58px, 5.3vw, 100px);
   line-height: 0.96;
   max-width: 100%;
 }
 
-.signature-main i {
-  background: var(--leaf);
-  display: inline-block;
-  flex: 0 0 auto;
-  height: 14px;
-  margin: 0 0 0.12em 6px;
-  width: 14px;
+.signature-main > span::after {
+  content: ".";
 }
 
 .signature-head > a {
@@ -702,11 +696,13 @@ body.quick-always .quick-action,
   background: #f3f4f0;
   border: 1px solid var(--line);
   border-radius: 8px;
+  align-content: center;
   display: grid;
-  grid-template-rows: minmax(310px, 1fr) auto;
-  min-height: 540px;
+  gap: 1cm;
+  grid-template-rows: 250px auto;
+  min-height: 475px;
   overflow: hidden;
-  padding: 28px;
+  padding: 24px;
   position: relative;
   transition: box-shadow 180ms ease, transform 180ms ease;
 }
@@ -717,17 +713,25 @@ body.quick-always .quick-action,
 }
 
 .seller-tile img {
-  align-self: center;
-  height: 310px;
+  align-self: end;
+  height: 250px;
   justify-self: center;
   object-fit: contain;
+  object-position: center bottom;
   width: 100%;
 }
 
 .seller-tile h3 {
-  font-size: clamp(22px, 1.6vw, 30px);
+  font-size: clamp(18px, 1.3vw, 22px);
   line-height: 1.08;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
+}
+
+.seller-tile h3 span {
+  color: inherit;
+  display: block;
+  font-size: inherit;
+  white-space: nowrap;
 }
 
 .seller-tile span,
@@ -2271,6 +2275,8 @@ footer p {
   }
 
   .seller-tile {
+    align-content: normal;
+    gap: 0;
     grid-column: auto;
     grid-template-columns: 1fr;
     grid-template-rows: 170px auto;
