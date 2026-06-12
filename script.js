@@ -63,10 +63,6 @@ document.addEventListener("keydown", (event) => {
 const revealTargets = document.querySelectorAll(".reveal");
 const sectionTargets = document.querySelectorAll("[data-section]");
 const sectionLinks = document.querySelectorAll("[data-section-link]");
-const autoplayVideos = document.querySelectorAll("[data-autoplay-video]");
-const filmVideo = document.querySelector("[data-autoplay-video]");
-const filmPlayToggle = document.querySelector("[data-film-toggle-play]");
-const filmMuteToggle = document.querySelector("[data-film-toggle-mute]");
 const heroSlides = Array.from(document.querySelectorAll(".hero-slide"));
 const heroPrevButton = document.querySelector("[data-hero-prev]");
 const heroNextButton = document.querySelector("[data-hero-next]");
@@ -135,98 +131,6 @@ if ("IntersectionObserver" in window && sectionTargets.length && sectionLinks.le
   );
 
   sectionTargets.forEach((section) => sectionObserver.observe(section));
-}
-
-if ("IntersectionObserver" in window && autoplayVideos.length) {
-  const videoObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const video = entry.target;
-        if (!(video instanceof HTMLVideoElement)) return;
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  autoplayVideos.forEach((video) => videoObserver.observe(video));
-}
-
-function syncFilmButtons() {
-  if (!(filmVideo instanceof HTMLVideoElement)) return;
-  if (filmPlayToggle) {
-    const isPlaying = !filmVideo.paused;
-    filmPlayToggle.textContent = "";
-    filmPlayToggle.setAttribute("aria-label", isPlaying ? "정지" : "재생");
-    filmPlayToggle.setAttribute("title", isPlaying ? "정지" : "재생");
-    filmPlayToggle.classList.toggle("is-active", isPlaying);
-  }
-  if (filmMuteToggle) {
-    filmMuteToggle.textContent = "";
-    filmMuteToggle.setAttribute("aria-label", filmVideo.muted ? "음향 켜기" : "음소거");
-    filmMuteToggle.setAttribute("title", filmVideo.muted ? "음향 켜기" : "음소거");
-    filmMuteToggle.classList.toggle("is-active", !filmVideo.muted);
-  }
-}
-
-if (filmVideo instanceof HTMLVideoElement) {
-  filmVideo.volume = 0.3;
-  filmVideo.muted = true;
-  syncFilmButtons();
-
-  filmPlayToggle?.addEventListener("click", () => {
-    if (filmVideo.paused) {
-      filmVideo.play().catch(() => {});
-    } else {
-      filmVideo.pause();
-    }
-    syncFilmButtons();
-  });
-
-  filmMuteToggle?.addEventListener("click", () => {
-    filmVideo.muted = !filmVideo.muted;
-    if (!filmVideo.muted) filmVideo.volume = 0.3;
-    syncFilmButtons();
-  });
-
-  filmVideo.addEventListener("play", syncFilmButtons);
-  filmVideo.addEventListener("pause", syncFilmButtons);
-  filmVideo.addEventListener("volumechange", syncFilmButtons);
-}
-
-const supportSlider = document.querySelector("[data-support-slider]");
-
-if (supportSlider) {
-  const supportSlides = supportSlider.querySelector(".support-slides");
-  const slides = Array.from(supportSlider.querySelectorAll(".support-slide"));
-  const prevButton = supportSlider.querySelector("[data-support-prev]");
-  const nextButton = supportSlider.querySelector("[data-support-next]");
-  const count = supportSlider.querySelector("[data-support-count]");
-  let activeSlide = 0;
-
-  function syncSupportSlider() {
-    if (!supportSlides || !slides.length) return;
-    const slide = slides[activeSlide];
-    supportSlides.style.transform = `translateX(-${slide.offsetLeft}px)`;
-    if (count) count.textContent = String(activeSlide + 1).padStart(2, "0");
-  }
-
-  prevButton?.addEventListener("click", () => {
-    activeSlide = (activeSlide - 1 + slides.length) % slides.length;
-    syncSupportSlider();
-  });
-
-  nextButton?.addEventListener("click", () => {
-    activeSlide = (activeSlide + 1) % slides.length;
-    syncSupportSlider();
-  });
-
-  window.addEventListener("resize", syncSupportSlider);
-  syncSupportSlider();
 }
 
 const proposalForm = document.querySelector("[data-proposal-form]");
