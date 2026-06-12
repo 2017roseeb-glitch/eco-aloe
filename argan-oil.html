@@ -7,10 +7,20 @@
     <meta name="description" content="로제 에코 베스트 5품목과 전체 카탈로그 제품 소개 페이지입니다." />
     <link rel="stylesheet" href="product.css" />
   </head>
-  <body>
+  <body class="quick-always">
     <header class="product-header">
       <a class="product-logo" href="index.html" aria-label="ROSEE ECO 홈">
         <img src="assets/eco-logo.png" alt="ROSEE ECO" />
+      </a>
+      <nav aria-label="제품 페이지 이동">
+        <a class="is-active" href="aloe-shampoo.html">스토어</a>
+      </nav>
+      <a class="instagram-link" href="https://www.instagram.com/ecoaloe.korea?igsh=MTF1bDc4emUyenNnOA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="에코 알로에 인스타그램">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.4" cy="6.6" r="1"></circle>
+        </svg>
       </a>
       <div class="language-menu">
         <button class="language-toggle" type="button" aria-expanded="false" aria-haspopup="true">Language</button>
@@ -59,6 +69,21 @@
       <p data-i18n="footer.address">주소 : 경기도 포천시 소흘읍 죽엽산로 고모리385-89</p>
       <p>E-mail : <a href="mailto:2017roseeb@gmail.com">2017roseeb@gmail.com</a></p>
     </footer>
+    <nav class="quick-actions" aria-label="빠른 이동">
+      <a class="quick-action" href="index.html" aria-label="홈">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 11.2 12 4l8 7.2" />
+          <path d="M6.5 10.5V20h11v-9.5" />
+          <path d="M10 20v-5h4v5" />
+        </svg>
+      </a>
+      <a class="quick-action" href="proposal.html" aria-label="수출 문의">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7.5h16v11H4z" />
+          <path d="m4.8 8.2 7.2 5.6 7.2-5.6" />
+        </svg>
+      </a>
+    </nav>
     <script src="i18n.js"></script>
     <script src="product.js"></script>
   </body>
