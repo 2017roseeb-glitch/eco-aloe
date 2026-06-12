@@ -3,45 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ROSEE ECO | 알로에 헤어 & 바디 케어</title>
     <meta
       name="description"
-      content="로제 에코 알로에 브랜드 페이지. 알로에 헤어 케어와 수출 시장을 위한 에코 라인 소개."
+      content="로제 에코 알로에 브랜드 사이트. 알로에 헤어 샴푸 누적 100만 개 판매와 해외 수출 국가에서 높아지는 에코 라인의 인기를 소개합니다."
     />
-    <meta name="naver-site-verification" content="01fa3d76d37e96bc566d4d411e848f2258f3a4b1" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="에코알로에 | Eco Aloe 브랜드페이지" />
-    <meta
-      property="og:description"
-      content="알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 로제의 에코 라인. 알로에 헤어 케어와 수출 시장을 위한 에코 브랜드."
-    />
-    <meta property="og:url" content="https://ecoaloe.co.kr" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://ecoaloe.co.kr/og-image.jpg" />
-    <title>에코알로에 | Eco Aloe 브랜드페이지</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="ROSEE ECO 메인">
-        <img src="assets/menu-logo.png" alt="ROSEE ECO" />
+    <header class="site-header" aria-label="주요 메뉴">
+      <a class="brand" href="#top" aria-label="ROSEE ECO 홈">
+        <img src="assets/eco-logo.png" alt="ROSEE ECO" />
       </a>
       <nav class="main-nav" aria-label="페이지 이동">
-        <a href="#signature" data-i18n="nav.lineup">제품라인</a>
-        <a href="aloe-shampoo.html" data-i18n="nav.store">스토어</a>
-        <a href="brand.html" data-i18n="nav.brand">브랜드</a>
-        <a href="#export" data-i18n="nav.export">수출국가</a>
-        <a href="proposal.html" data-i18n="nav.proposal">수출&협력 제안</a>
+        <a href="#lineup" data-i18n="nav.lineup">Line Up</a>
+        <a href="#export" data-i18n="nav.export">Export</a>
+        <a href="#million" data-i18n="nav.sales">1M Sales</a>
+        <a href="#contact" data-i18n="nav.contact">Business</a>
       </nav>
-      <a class="instagram-link" href="https://www.instagram.com/ecoaloe.korea?igsh=MTF1bDc4emUyenNnOA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="에코 알로에 인스타그램">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
-          <circle cx="12" cy="12" r="4"></circle>
-          <circle cx="17.4" cy="6.6" r="1"></circle>
-        </svg>
-      </a>
       <div class="language-menu">
-        <button class="language-toggle" type="button" aria-expanded="false">Language</button>
-        <div class="language-panel" aria-label="언어 선택">
+        <button class="language-toggle" type="button" aria-expanded="false" aria-haspopup="true">Language</button>
+        <div class="language-panel" aria-label="Language selection">
           <button type="button" data-lang="ko">한국어</button>
           <button type="button" data-lang="en">English</button>
           <button type="button" data-lang="ja">日本語</button>
@@ -49,7 +31,7 @@
           <button type="button" data-lang="vi">Tiếng Việt</button>
           <button type="button" data-lang="th">ไทย</button>
           <button type="button" data-lang="ru">Русский</button>
-          <button type="button" data-lang="uz">O‘zbek</button>
+          <button type="button" data-lang="uz">Oʻzbek</button>
         </div>
       </div>
       <button class="menu-button" type="button" aria-label="메뉴 열기">
@@ -57,182 +39,177 @@
         <span></span>
       </button>
     </header>
-    <nav class="section-pager" aria-label="섹션 이동">
-      <a class="is-active" href="index.html" data-section-link="top">01</a>
-      <a href="#signature" data-section-link="signature">02</a>
-      <a href="#brand" data-section-link="brand">03</a>
-      <a href="#export" data-section-link="export">04</a>
-    </nav>
 
     <main id="top">
-      <section class="hero snap-section" data-section="top" aria-label="에코 알로에 메인">
-        <div class="hero-slides" aria-hidden="true">
-          <div class="hero-slide is-active" style="background-image: url('assets/hero-main-01.jpg')"></div>
-          <div class="hero-slide" style="background-image: url('assets/hero-main-02.jpg')"></div>
-          <div class="hero-slide" style="background-image: url('assets/hero-main-03.jpg')"></div>
+      <section class="hero" aria-label="에코 알로에 히어로">
+        <div class="hero-tint" aria-hidden="true"></div>
+        <div class="hero-product" aria-hidden="true">
+          <img class="hero-bottle hero-bottle-main" src="assets/aloe-shampoo-bottle.png" alt="" />
+          <img class="hero-bottle hero-bottle-side" src="assets/argan-shampoo-bottle.png" alt="" />
         </div>
-        <div class="hero-copy reveal">
-          <img class="hero-logo" src="assets/eco-logo.png" alt="eco aloe" />
-          <p class="hero-lede" data-i18n="home.hero.tagline">Fresh Aloe Care, Everyday.</p>
-          <p class="hero-text" data-i18n="home.hero.copy">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="home.hero.eyebrow">ROSEE HAIR & BODY CARE</p>
+          <h1 data-i18n="home.hero.title">ECO SERIES</h1>
+          <p class="hero-lede" data-i18n="home.hero.tagline">Where Daily Care Begins.</p>
+          <p class="hero-note" data-i18n="home.hero.copy">
             알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 로제의 에코 라인.
             국내를 넘어 수출 시장에서 다시 찾는 헤어 케어 브랜드로 성장하고 있습니다.
           </p>
-          <div class="hero-actions">
-            <a href="#signature" data-i18n="home.hero.viewProducts">제품 보기</a>
-            <a href="proposal.html" data-i18n="home.hero.exportInquiry">수출 문의</a>
-          </div>
-          <div class="hero-slide-controls" aria-label="메인 이미지 슬라이드 조작">
-            <button type="button" data-hero-prev aria-label="이전 메인 이미지"></button>
-            <div class="hero-progress" aria-hidden="true"><span data-hero-progress></span></div>
-            <button type="button" data-hero-next aria-label="다음 메인 이미지"></button>
+          <div class="hero-bottom">
+            <p data-i18n="home.hero.bottom1">Eco Aloe Shampoo</p>
+            <p data-i18n="home.hero.bottom2">Since 1991 Rosee Cosmetics</p>
           </div>
         </div>
-        <div class="hero-index" aria-label="대표 정보">
-          <p><span>01</span> <b data-i18n="home.hero.point1">Aloe Daily Care</b></p>
-          <p><span>02</span> <b data-i18n="home.hero.point2">1,000,000+ Shampoo Sales</b></p>
-          <p><span>03</span> <b data-i18n="home.hero.point3">Export Ready Line</b></p>
+        <a class="hero-cta" href="#lineup" aria-label="제품 라인 보기">
+          <span data-i18n="common.explore">Explore</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17 17 7M9 7h8v8" />
+          </svg>
+        </a>
+      </section>
+
+      <section class="signal-band" id="million" aria-label="판매 성과">
+        <div class="section-heading">
+          <p class="eyebrow">Sales Milestone</p>
+          <h2 data-i18n="home.sales.title">샴푸 누적 100만 개 판매</h2>
+        </div>
+        <div class="metric-row">
+          <article>
+            <strong>1,000,000+</strong>
+            <span data-i18n="home.sales.card1">알로에 샴푸 누적 판매 어필</span>
+          </article>
+          <article>
+            <strong>750ml</strong>
+            <span data-i18n="home.sales.card2">가족이 함께 쓰는 대용량 데일리 케어</span>
+          </article>
+          <article>
+            <strong>Global</strong>
+            <span data-i18n="home.sales.card3">수출 국가에서 꾸준히 넓어지는 재구매 기반</span>
+          </article>
         </div>
       </section>
 
-      <section class="signature snap-section" id="signature" data-section="signature" aria-label="에코 시리즈 베스트셀러">
-        <div class="signature-layout">
-          <div class="signature-head reveal">
-            <h2>
-              <span class="signature-kicker" data-i18n="home.signature.kicker">ECO SERIES</span>
-              <span class="signature-main"><span data-i18n="home.signature.title">BEST SELLER</span><i aria-hidden="true"></i></span>
-            </h2>
-            <a href="aloe-shampoo.html"><span data-i18n="home.signature.more">더보기</span> <span>→</span></a>
-          </div>
-          <div class="signature-showcase">
-            <a class="seller-tile reveal" href="aloe-shampoo.html">
-              <img src="assets/best-aloe-shampoo.png" alt="에코 알로에 헤어샴푸" />
-              <div>
-                <h3>Eco Aloe Hair Shampoo</h3>
-                <span>760ml · 13,000원</span>
-              </div>
+      <section class="lineup" id="lineup" aria-label="에코 제품 라인">
+        <div class="section-heading">
+          <p class="eyebrow">Eco Line Up</p>
+          <h2 data-i18n="home.lineup.title">알로에를 중심으로 넓어지는 데일리 케어</h2>
+        </div>
+        <div class="product-stage">
+          <article class="featured-product">
+            <div>
+              <p class="eyebrow">Best Seller</p>
+              <h3 data-i18n="products.aloeShampoo.name">Eco Aloe Hair Shampoo</h3>
+              <p data-i18n="home.lineup.featured">
+                산뜻한 사용감과 넉넉한 용량으로 일상 속 사용 빈도를 높인 대표 제품입니다.
+                샴푸, 컨디셔너, 헤어 미스트, 바디 라인까지 에코 브랜드의 확장성을 보여줍니다.
+              </p>
+              <a class="detail-link" href="aloe-shampoo.html" data-i18n="common.learnMore">더 알아보기</a>
+            </div>
+            <img src="assets/aloe-shampoo.png" alt="에코 알로에 샴푸 제품 이미지" />
+          </article>
+          <div class="product-grid">
+            <a href="aloe-conditioner.html">
+              <img src="assets/aloe-conditioner.png" alt="에코 알로에 컨디셔너" />
+              <h3 data-i18n="products.aloeConditioner.name">Aloe Conditioner</h3>
+              <p data-i18n="products.aloeConditioner.short">부드러운 머릿결을 위한 데일리 페어 제품</p>
+              <span data-i18n="common.learnMore">더 알아보기</span>
             </a>
-            <a class="seller-tile reveal" href="aloe-shampoo.html">
-              <img src="assets/best-black-garlic.png" alt="에코 흑마늘 헤어샴푸" />
-              <div>
-                <h3>Black Garlic Shampoo</h3>
-                <span>760ml · 15,000원</span>
-              </div>
+            <a href="hair-mist.html">
+              <img src="assets/aloe-mist.png" alt="에코 알로에 헤어 미스트" />
+              <h3 data-i18n="products.hairMist.name">Hair Mist</h3>
+              <p data-i18n="products.hairMist.short">외출 전후 가볍게 더하는 산뜻한 헤어 케어</p>
+              <span data-i18n="common.learnMore">더 알아보기</span>
             </a>
-            <a class="seller-tile reveal" href="argan-oil.html">
-              <img src="assets/best-argan.png" alt="에코 아르간 헤어샴푸" />
-              <div>
-                <h3>Argan Hair Shampoo</h3>
-                <span>760ml · 15,000원</span>
-              </div>
+            <a href="argan-oil.html">
+              <img src="assets/argan-oil.png" alt="에코 알로에 아르간 헤어 오일" />
+              <h3 data-i18n="products.arganOil.name">Argan Hair Oil</h3>
+              <p data-i18n="products.arganOil.short">윤기와 마무리감을 강조하는 고보습 케어</p>
+              <span data-i18n="common.learnMore">더 알아보기</span>
             </a>
-            <a class="seller-tile reveal" href="aloe-shampoo.html">
-              <img src="assets/best-ginseng.png" alt="에코 진생 리바이탈 헤어샴푸" />
-              <div>
-                <h3>Ginseng Revital</h3>
-                <span>760ml</span>
-              </div>
+            <a href="body-cleanser.html">
+              <img src="assets/body-cleanser.png" alt="에코 알로에 바디 클렌저" />
+              <h3 data-i18n="products.bodyCleanser.name">Body Cleanser</h3>
+              <p data-i18n="products.bodyCleanser.short">헤어에서 바디로 이어지는 에코 알로에 라인</p>
+              <span data-i18n="common.learnMore">더 알아보기</span>
             </a>
           </div>
         </div>
       </section>
 
-      <section class="brand-story snap-section" id="brand" data-section="brand" aria-label="브랜드 필름">
-        <div class="film-layout">
-          <div class="film-head reveal">
-            <p class="eyebrow" data-i18n="home.film.eyebrow">BRAND FILM</p>
-            <h2><span class="section-heading-text" data-i18n-html="home.film.title">브랜드<br />필름</span><i aria-hidden="true"></i></h2>
-            <div class="film-controls" aria-label="브랜드 필름 재생 설정">
-              <button type="button" data-film-toggle-play aria-label="정지" title="정지"></button>
-              <button type="button" data-film-toggle-mute aria-label="음향 켜기" title="음향 켜기"></button>
-            </div>
-          </div>
-          <div class="film-stage reveal">
-            <video
-              src="assets/brand-film.mov"
-              data-autoplay-video
-              muted
-              playsinline
-              preload="metadata"
-              aria-label="에코 알로에 브랜드 필름"
-            ></video>
+      <section class="export" id="export" aria-label="수출 국가 정보">
+        <div class="export-visual">
+          <img src="assets/shampoo-scene.png" alt="에코 알로에 샴푸 연출 이미지" />
+        </div>
+        <div class="export-copy">
+          <p class="eyebrow">Export Market</p>
+          <h2 data-i18n="home.export.title">수출 국가에서 높아지는 에코 라인 인지도</h2>
+          <p data-i18n="home.export.copy">
+            합리적인 용량, 친숙한 알로에 콘셉트, 선명한 제품 라인업을 바탕으로
+            해외 유통 채널에서 소개하기 쉬운 브랜드 자산을 갖추고 있습니다.
+          </p>
+          <div class="country-list" aria-label="주요 수출 권역">
+            <span>Vietnam</span>
+            <span>Mongolia</span>
+            <span>Uzbekistan</span>
+            <span>Thailand</span>
+            <span>Middle East</span>
+            <span>CIS</span>
           </div>
         </div>
       </section>
 
-      <section class="export snap-section" id="export" data-section="export" aria-label="브랜드 지원">
-        <div class="support-layout">
-          <div class="support-head reveal">
-            <p class="eyebrow" data-i18n="home.support.eyebrow">BRAND SUPPORT</p>
-            <h2><span class="section-heading-text" data-i18n-html="home.support.title">브랜드<br />지원</span><i aria-hidden="true"></i></h2>
-          </div>
-          <div class="support-slider reveal" data-support-slider>
-            <div class="support-viewport">
-              <div class="support-slides">
-                <article class="support-slide">
-                  <p class="support-label" data-i18n="home.support.label1">제조 환경</p>
-                  <img src="assets/support-01-manufacturing.png" alt="에코 알로에 제조 환경" />
-                  <div class="support-copy">
-                    <span>01</span>
-                    <h3 data-i18n-html="home.support.title1">청결한<br />제조 환경</h3>
-                    <p data-i18n="home.support.desc1">엄격한 위생 관리와 체계적인 생산 공정으로 신뢰할 수 있는 제품을 만듭니다.</p>
-                  </div>
-                </article>
-                <article class="support-slide">
-                  <p class="support-label" data-i18n="home.support.label2">포장 시스템</p>
-                  <img src="assets/support-02-packaging.png" alt="에코 알로에 포장 시스템" />
-                  <div class="support-copy">
-                    <span>02</span>
-                    <h3 data-i18n-html="home.support.title2">안전한<br />포장 시스템</h3>
-                    <p data-i18n="home.support.desc2">튼튼한 포장과 철저한 검수로 국내외 어디든 안전하게 배송합니다.</p>
-                  </div>
-                </article>
-                <article class="support-slide">
-                  <p class="support-label" data-i18n="home.support.label3">마케팅 지원</p>
-                  <img src="assets/support-03-marketing.png" alt="에코 알로에 마케팅 지원 캐릭터" />
-                  <div class="support-copy">
-                    <span>03</span>
-                    <h3 data-i18n="home.support.title3">마케팅 지원</h3>
-                    <p data-i18n="home.support.desc3">POP, 배너 등 다양한 홍보물을 지원하여 브랜드 성장을 함께합니다.</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="support-controls" aria-label="브랜드 지원 슬라이드 조작">
-              <button type="button" data-support-prev aria-label="이전 지원 항목">←</button>
-              <span data-support-count>01</span>
-              <button type="button" data-support-next aria-label="다음 지원 항목">→</button>
-            </div>
-          </div>
+      <section class="company" id="company" aria-label="회사 정보">
+        <div class="section-heading">
+          <p class="eyebrow">Rosee Cosmetics</p>
+          <h2 data-i18n="home.company.title">브랜드 운영과 수출 제안을 위한 회사 정보 영역</h2>
         </div>
+        <div class="company-grid">
+          <article>
+            <h3>Brand</h3>
+            <p data-i18n="home.company.brand">로제화장품의 생활 밀착형 헤어 & 바디 케어 브랜드로, 실사용 중심의 제품 구성을 강조합니다.</p>
+          </article>
+          <article>
+            <h3>Product</h3>
+            <p data-i18n="home.company.product">샴푸와 컨디셔너를 중심으로 미스트, 오일, 바디 케어까지 확장 가능한 라인업을 보유합니다.</p>
+          </article>
+          <article>
+            <h3>Export</h3>
+            <p data-i18n="home.company.export">수출국가 정보, 인기 상승 지표, 대표 판매 성과를 한 페이지에서 빠르게 전달하도록 구성했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-footer-section" id="contact">
+        <div class="store-banner">
+          <p class="eyebrow">Business Contact</p>
+          <h2>
+            <span data-i18n="home.contact.title1">비즈니스 및 수출 문의는</span>
+            <span data-i18n="home.contact.title2">아래 메일로 보내주세요</span>
+          </h2>
+          <div class="partner-mail">
+            <span aria-hidden="true">@</span>
+            <div>
+              <p>Distribution & Export Partnership</p>
+              <a href="mailto:2017roseeb@gmail.com">2017roseeb@gmail.com</a>
+            </div>
+          </div>
+          <p class="contact-note" data-i18n="home.contact.note">본 메일은 에코 브랜드 유통, 수출, B2B 상담 문의 전용입니다.</p>
+        </div>
+
+        <footer>
+          <div class="footer-brand">
+            <img src="assets/eco-logo.png" alt="ROSEE ECO" />
+          </div>
+          <div class="footer-info">
+            <p data-i18n="footer.company">로제화장품 주식회사 | 대표 : 조종현</p>
+            <p data-i18n="footer.business">사업자등록번호 : 132-86-15385</p>
+            <p data-i18n="footer.address">주소 : 경기도 포천시 소흘읍 죽엽산로 고모리385-89</p>
+            <p>E-mail : <a href="mailto:2017roseeb@gmail.com">2017roseeb@gmail.com</a></p>
+            <p>© ROSEE COSMETICS. All Rights Reserved.</p>
+          </div>
+        </footer>
       </section>
     </main>
-
-    <footer>
-      <img src="assets/eco-logo.png" alt="ROSEE ECO" />
-      <div>
-        <p data-i18n="footer.company">로제화장품 주식회사 | 대표 : 조종현</p>
-        <p data-i18n="footer.business">사업자등록번호 : 132-86-15385</p>
-        <p data-i18n="footer.address">주소 : 경기도 포천시 소흘읍 죽엽산로 고모리385-89</p>
-        <p>© ROSEE COSMETICS. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <nav class="quick-actions" aria-label="빠른 이동">
-      <a class="quick-action" href="index.html" aria-label="홈">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4 11.2 12 4l8 7.2" />
-          <path d="M6.5 10.5V20h11v-9.5" />
-          <path d="M10 20v-5h4v5" />
-        </svg>
-      </a>
-      <a class="quick-action" href="proposal.html" aria-label="수출 문의">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4 7.5h16v11H4z" />
-          <path d="m4.8 8.2 7.2 5.6 7.2-5.6" />
-        </svg>
-      </a>
-    </nav>
 
     <script src="i18n.js"></script>
     <script src="script.js"></script>
