@@ -2244,14 +2244,30 @@ footer p {
   }
 
   .signature-showcase {
-    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .seller-tile {
     grid-column: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    min-height: 0;
+    grid-template-rows: 170px auto;
+    min-height: 300px;
+    padding: 14px;
+  }
+
+  .seller-tile img {
+    height: 160px;
+  }
+
+  .seller-tile h3 {
+    font-size: clamp(15px, 4.4vw, 19px);
+    margin-bottom: 10px;
+  }
+
+  .seller-tile span,
+  .seller-tile p {
+    font-size: 12px;
   }
 
   .support-viewport {
@@ -2276,9 +2292,31 @@ footer p {
   }
 
   .support-controls {
+    grid-template-columns: 54px 1fr 54px;
     margin-left: 0;
     margin-top: 18px;
-    width: 100%;
+    max-width: 306px;
+    width: calc(100% - 70px);
+  }
+
+  .support-controls button {
+    font-size: 23px;
+  }
+
+  .quick-actions {
+    bottom: 14px;
+    gap: 8px;
+    right: 12px;
+  }
+
+  .quick-action {
+    height: 46px;
+    width: 46px;
+  }
+
+  .quick-action svg {
+    height: 21px;
+    width: 21px;
   }
 
   .product-card {

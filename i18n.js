@@ -239,7 +239,7 @@ const siteKo = {
       eyebrow: "BRAND SUPPORT",
       title: "브랜드<br />지원",
       label1: "제조 환경",
-      title1: "청결한 제조 환경",
+      title1: "청결한<br />제조 환경",
       desc1: "엄격한 위생 관리와 체계적인 생산 공정으로 신뢰할 수 있는 제품을 만듭니다.",
       label2: "포장 시스템",
       title2: "안전한<br />포장 시스템",
