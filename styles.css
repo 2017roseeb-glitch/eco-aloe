@@ -360,6 +360,28 @@ body.quick-always .quick-action,
   transform: scale(1.45);
 }
 
+.main-section-pager {
+  gap: 16px;
+}
+
+.main-section-pager::before {
+  height: calc(100% - 8px);
+  top: 4px;
+  width: 1px;
+}
+
+.main-section-pager a {
+  color: transparent;
+  font-size: 0;
+  height: 9px;
+  overflow: hidden;
+  width: 9px;
+}
+
+.main-section-pager a.is-active {
+  transform: scale(1.45);
+}
+
 .snap-section {
   min-height: 100svh;
   scroll-snap-align: start;
