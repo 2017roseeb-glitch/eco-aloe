@@ -203,7 +203,7 @@ function mergeDict(base, extra) {
 
 const siteKo = {
   meta: {
-    title: "ROSEE ECO ALOE | 브랜드 페이지",
+    title: "에코알로에 | ecoaloe 브랜드",
     description: "로제 에코 알로에 브랜드 페이지. 알로에 헤어 케어와 수출 시장을 위한 에코 라인 소개.",
   },
   nav: {
