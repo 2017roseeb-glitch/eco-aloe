@@ -103,17 +103,17 @@ const categoryLabels = {
     label: "전체",
   },
   hair: {
-    title: "헤어 제품",
+    title: "헤어라인",
     desc: "샴푸, 컨디셔너, 트리트먼트, 스타일링까지 에코 헤어 케어 제품입니다.",
     label: "헤어",
   },
   body: {
-    title: "바디 제품",
+    title: "바디라인",
     desc: "바디 클렌저, 바디 에센스, 세트 구성을 중심으로 한 에코 바디 케어 제품입니다.",
     label: "바디",
   },
   face: {
-    title: "페이스 제품",
+    title: "페이스라인",
     desc: "페이스 카테고리는 추후 제품 정보가 준비되는 대로 업데이트됩니다.",
     label: "페이스",
   },
@@ -264,13 +264,14 @@ function renderCatalog() {
       ([name, volume, price, image, key]) => {
         const category = getProductCategory(name);
         const displayName = i18n(`store.productNames.${key}`, name);
+        const titleClass = Array.from(displayName.replace(/\s/g, "")).length > 10 ? " is-long-title" : "";
         const isExportOnly = exportOnlyProductKeys.has(key);
         const buyLink = productBuyLinks[key] || "proposal.html";
         return `
         <article class="catalog-card product-${key}">
           <span class="catalog-category">${getCategoryMeta(category).label}</span>
           <img src="${image}" alt="${displayName}" />
-          <h3>${displayName}</h3>
+          <h3 class="${titleClass.trim()}">${displayName}</h3>
           <p>${formatCatalogValue(volume)} · ${formatCatalogValue(price)}</p>
           ${
             isExportOnly

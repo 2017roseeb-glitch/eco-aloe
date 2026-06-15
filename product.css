@@ -875,6 +875,11 @@ body.is-category-store .catalog-section {
 }
 
 @media (max-width: 560px) {
+  body.is-category-store {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   .product-header {
     gap: 8px;
     padding-inline: 12px;
@@ -924,12 +929,73 @@ body.is-category-store .catalog-section {
   }
 
   .store-banner {
-    height: 260px;
-    margin-top: 96px;
+    height: auto;
+    min-height: 104px;
+    margin: 88px auto 10px;
+    padding: 20px;
+    width: calc(100% - 24px);
   }
 
-  .category-card {
-    aspect-ratio: 4 / 5;
+  .store-banner p {
+    font-size: 30px;
+  }
+
+  .store-banner + .category-section,
+  .category-section,
+  body.is-category-store .category-section {
+    gap: 8px;
+    margin: 0 auto 24px;
+    width: calc(100% - 24px);
+  }
+
+  .category-card,
+  body.is-category-store .category-card {
+    aspect-ratio: 16 / 4.7;
+  }
+
+  .category-card div,
+  body.is-category-store .category-card div {
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .category-card h2,
+  body.is-category-store .category-card h2 {
+    font-size: 25px;
+    margin-bottom: 6px;
+  }
+
+  .category-card p,
+  body.is-category-store .category-card p {
+    font-size: 12px;
+  }
+
+  body.is-category-store .store-banner {
+    display: flex;
+  }
+
+  body.is-category-store .catalog-section {
+    padding: 26px 12px 64px;
+  }
+
+  .catalog-section.is-category-view .catalog-head {
+    display: block;
+  }
+
+  .catalog-section.is-category-view .catalog-head h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .catalog-section.is-category-view .catalog-category-panel {
+    display: none;
+  }
+
+  .catalog-section.is-category-view .catalog-grid {
+    max-height: none;
+    overflow: visible;
   }
 
   .catalog-grid {
@@ -946,8 +1012,10 @@ body.is-category-store .catalog-section {
 
   .catalog-card,
   .catalog-section.is-category-view .catalog-card {
-    min-height: 360px;
-    padding: 12px 10px 14px;
+    align-self: stretch;
+    height: 330px;
+    min-height: 330px;
+    padding: 12px 10px;
   }
 
   .catalog-card img,
@@ -969,8 +1037,22 @@ body.is-category-store .catalog-section {
   .catalog-card.product-aloeHairColor h3,
   .catalog-card.product-limeMintSet h3,
   .catalog-card.product-bodySet h3 {
-    font-size: 13px;
-    white-space: normal;
+    font-size: 12px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .catalog-card.product-strongMist h3,
+  .catalog-card.product-hairColor h3,
+  .catalog-card.product-aloeHairColor h3,
+  .catalog-card.product-limeMintSet h3,
+  .catalog-card.product-bodySet h3,
+  .catalog-card h3.is-long-title {
+    font-size: 10px;
+    letter-spacing: -0.04em;
   }
 
   .catalog-card p,
@@ -981,6 +1063,7 @@ body.is-category-store .catalog-section {
   .buy-button,
   .catalog-section.is-category-view .buy-button {
     font-size: 12px;
+    margin-top: 14px;
     min-height: 38px;
     padding-inline: 8px;
   }
