@@ -177,6 +177,25 @@ function formatCatalogValue(value) {
   return value === "가격 확인 예정" ? i18n("store.pendingPrice", value) : value;
 }
 
+function splitCatalogTitle(title) {
+  const words = title.trim().split(/\s+/);
+  if (words.length < 2) return [title, ""];
+
+  let bestIndex = 1;
+  let smallestDifference = Infinity;
+  for (let index = 1; index < words.length; index += 1) {
+    const firstLine = words.slice(0, index).join(" ");
+    const secondLine = words.slice(index).join(" ");
+    const difference = Math.abs(Array.from(firstLine).length - Array.from(secondLine).length);
+    if (difference < smallestDifference) {
+      bestIndex = index;
+      smallestDifference = difference;
+    }
+  }
+
+  return [words.slice(0, bestIndex).join(" "), words.slice(bestIndex).join(" ")];
+}
+
 function renderBest(index) {
   if (!bestKicker || !bestTitle || !bestBody || !bestMeta || !bestImage || !bestThumbs) return;
   activeBest = (index + bestProducts.length) % bestProducts.length;
@@ -265,13 +284,16 @@ function renderCatalog() {
         const category = getProductCategory(name);
         const displayName = i18n(`store.productNames.${key}`, name);
         const titleClass = Array.from(displayName.replace(/\s/g, "")).length > 10 ? " is-long-title" : "";
+        const [titleLine1, titleLine2] = splitCatalogTitle(displayName);
         const isExportOnly = exportOnlyProductKeys.has(key);
         const buyLink = productBuyLinks[key] || "proposal.html";
         return `
         <article class="catalog-card product-${key}">
           <span class="catalog-category">${getCategoryMeta(category).label}</span>
           <img src="${image}" alt="${displayName}" />
-          <h3 class="${titleClass.trim()}">${displayName}</h3>
+          <h3 class="${titleClass.trim()}" aria-label="${displayName}">
+            <span>${titleLine1}</span><span>${titleLine2}</span>
+          </h3>
           <p>${formatCatalogValue(volume)} · ${formatCatalogValue(price)}</p>
           ${
             isExportOnly
