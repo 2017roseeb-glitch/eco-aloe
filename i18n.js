@@ -2,21 +2,21 @@ const ECO_LANG_STORAGE_KEY = "eco-language";
 
 const baseKo = {
   meta: {
-    title: "ROSEE ECO | 알로에 헤어 & 바디 케어",
+    title: "에코알로에ㅣeco aloe 헤어,바디 케어브랜드",
     description:
-      "로제 에코 알로에 브랜드 사이트. 알로에 헤어 샴푸 누적 100만 개 판매와 해외 수출 국가에서 높아지는 에코 라인의 인기를 소개합니다.",
+      "에코알로에는 알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 헤어, 바디 케어 브랜드입니다.",
   },
   nav: { lineup: "제품라인", export: "수출국가", sales: "100만 판매", contact: "비즈니스 문의" },
   common: { explore: "Explore", learnMore: "더 알아보기", backHome: "메인으로" },
   home: {
     hero: {
-      eyebrow: "ROSEE HAIR & BODY CARE",
+      eyebrow: "ECO ALOE HAIR & BODY CARE",
       title: "ECO SERIES",
       tagline: "Where Daily Care Begins.",
       copy:
-        "알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 로제의 에코 라인. 국내를 넘어 수출 시장에서 다시 찾는 헤어 케어 브랜드로 성장하고 있습니다.",
+        "알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 에코알로에. 헤어와 바디를 위한 데일리 케어 브랜드로 성장하고 있습니다.",
       bottom1: "Eco Aloe Shampoo",
-      bottom2: "Since 1991 Rosee Cosmetics",
+      bottom2: "Hair & Body Care Brand",
     },
     sales: {
       title: "샴푸 누적 100만 개 판매",
@@ -36,7 +36,7 @@ const baseKo = {
     },
     company: {
       title: "브랜드 운영과 수출 제안을 위한 회사 정보 영역",
-      brand: "로제화장품의 생활 밀착형 헤어 & 바디 케어 브랜드로, 실사용 중심의 제품 구성을 강조합니다.",
+      brand: "에코알로에의 생활 밀착형 헤어 & 바디 케어 브랜드로, 실사용 중심의 제품 구성을 강조합니다.",
       product: "샴푸와 컨디셔너를 중심으로 미스트, 오일, 바디 케어까지 확장 가능한 라인업을 보유합니다.",
       export: "수출국가 정보, 인기 상승 지표, 대표 판매 성과를 한 페이지에서 빠르게 전달하도록 구성했습니다.",
     },
@@ -97,21 +97,21 @@ const baseKo = {
 
 const baseEn = {
   meta: {
-    title: "ROSEE ECO | Aloe Hair & Body Care",
+    title: "ecoaloe | eco aloe hair and body care brand",
     description:
-      "ROSEE ECO aloe brand site, introducing the 1 million shampoo sales milestone and growing popularity in export markets.",
+      "Ecoaloe is a hair and body care brand with fresh aloe moisture and daily care sensibility.",
   },
   nav: { lineup: "Line Up", export: "Export", sales: "1M Sales", contact: "Business" },
   common: { explore: "Explore", learnMore: "Learn more", backHome: "Home" },
   home: {
     hero: {
-      eyebrow: "ROSEE HAIR & BODY CARE",
+      eyebrow: "ECO ALOE HAIR & BODY CARE",
       title: "ECO SERIES",
       tagline: "Where Daily Care Begins.",
       copy:
-        "ROSEE ECO brings fresh aloe moisture and daily care sensibility to hair and body routines, growing as a repeatable export-market hair care brand.",
+        "Ecoaloe brings fresh aloe moisture and daily care sensibility to hair and body routines.",
       bottom1: "Eco Aloe Shampoo",
-      bottom2: "Since 1991 Rosee Cosmetics",
+      bottom2: "Hair & Body Care Brand",
     },
     sales: {
       title: "Over 1 million shampoos sold",
@@ -127,11 +127,11 @@ const baseEn = {
     export: {
       title: "Rising ECO line awareness across export markets",
       copy:
-        "With practical sizing, a familiar aloe concept, and a clear lineup, ROSEE ECO is easy to introduce through overseas distribution channels.",
+        "With practical sizing, a familiar aloe concept, and a clear lineup, ecoaloe is easy to introduce through overseas distribution channels.",
     },
     company: {
       title: "Company information for brand and export proposals",
-      brand: "A practical hair and body care brand from Rosee Cosmetics, built around real daily use.",
+      brand: "A practical ecoaloe hair and body care brand built around real daily use.",
       product: "An expandable lineup centered on shampoo and conditioner, with mist, oil, and body care products.",
       export: "Export market notes, popularity signals, and representative sales performance are organized on one page.",
     },
@@ -203,8 +203,8 @@ function mergeDict(base, extra) {
 
 const siteKo = {
   meta: {
-    title: "에코알로에 | ecoaloe 브랜드",
-    description: "로제 에코 알로에 브랜드 페이지. 알로에 헤어 케어와 수출 시장을 위한 에코 라인 소개.",
+    title: "에코알로에ㅣeco aloe 헤어,바디 케어브랜드",
+    description: "에코알로에는 알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 헤어, 바디 케어 브랜드입니다.",
   },
   nav: {
     lineup: "제품라인",
@@ -219,7 +219,7 @@ const siteKo = {
       eyebrow: "HAIR & BODY CARE",
       tagline: "Fresh Aloe Care, Everyday.",
       copy:
-        "알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 로제의 에코 라인. 국내를 넘어 수출 시장에서 다시 찾는 헤어 케어 브랜드로 성장하고 있습니다.",
+        "알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 에코알로에. 헤어와 바디를 위한 데일리 케어 브랜드로 성장하고 있습니다.",
       viewProducts: "제품 보기",
       exportInquiry: "수출 문의",
       point1: "Aloe Daily Care",
@@ -381,7 +381,7 @@ const siteKo = {
     },
   },
   proposalContact: {
-    metaTitle: "ROSEE ECO | 수출 및 유통 파트너십 문의",
+    metaTitle: "에코알로에 | 수출 및 유통 파트너십 문의",
     kicker: "CONTACT",
     title: "유통 파트너십 문의는<br />아래 메일로 보내주세요",
     partnership: "DISTRIBUTION PARTNERSHIP",
@@ -390,7 +390,7 @@ const siteKo = {
     note: "본 메일은 유통 파트너십 문의 전용입니다 · 일반 소비자 문의는 공식 채널을 이용해 주세요",
   },
   proposal: {
-    metaTitle: "ROSEE ECO | 수출&협력업체 제안",
+    metaTitle: "에코알로에 | 수출&협력업체 제안",
     breadcrumb: "홈 · <strong>수출&협력업체 제품/상품 제안 안내</strong>",
     title: "수출&협력업체 제품/상품 제안 안내",
     consentTitle: "제안 개인정보 수집 및 이용 동의",
@@ -441,8 +441,8 @@ const siteKo = {
 
 const siteEn = {
   meta: {
-    title: "ROSEE ECO ALOE | Brand Page",
-    description: "ROSEE ECO ALOE brand page for aloe hair care and export-ready ECO line introductions.",
+    title: "ecoaloe | eco aloe hair and body care brand",
+    description: "Ecoaloe is a hair and body care brand with fresh aloe moisture and daily care sensibility.",
   },
   nav: {
     lineup: "Lineup",
@@ -457,7 +457,7 @@ const siteEn = {
       eyebrow: "HAIR & BODY CARE",
       tagline: "Fresh Aloe Care, Everyday.",
       copy:
-        "ROSEE ECO blends fresh aloe moisture with everyday care sensibility, growing into a hair care brand that export markets return to.",
+        "Ecoaloe blends fresh aloe moisture with everyday care sensibility for daily hair and body care.",
       viewProducts: "View Products",
       exportInquiry: "Export Inquiry",
       point1: "Aloe Daily Care",
@@ -612,7 +612,7 @@ const siteEn = {
     },
   },
   proposalContact: {
-    metaTitle: "ROSEE ECO | Distribution Partnership",
+    metaTitle: "ecoaloe | Distribution Partnership",
     kicker: "CONTACT",
     title: "For distribution partnership inquiries,<br />please contact us by email",
     partnership: "DISTRIBUTION PARTNERSHIP",
@@ -621,7 +621,7 @@ const siteEn = {
     note: "This email is for distribution partnership inquiries · Please use the official channel for consumer inquiries",
   },
   proposal: {
-    metaTitle: "ROSEE ECO | Export & Partner Proposal",
+    metaTitle: "ecoaloe | Export & Partner Proposal",
     breadcrumb: "Home · <strong>Export & Partner Product Proposal Guide</strong>",
     title: "Export & Partner Product Proposal Guide",
     consentTitle: "Consent to Collect and Use Personal Information",
@@ -672,51 +672,51 @@ const siteEn = {
 
 const localized = {
   ja: {
-    meta: { title: "ROSEE ECO ALOE | ブランドページ" },
+    meta: { title: "ecoaloe | ヘア・ボディケアブランド" },
     nav: { lineup: "製品ライン", store: "ストア", brand: "ブランド", export: "輸出国", proposal: "輸出・協力提案", allProducts: "全製品" },
     home: {
-      hero: { copy: "アロエのみずみずしさとデイリーケアの感性を込めたROSEEのECOライン。国内を越えて輸出市場でも選ばれるヘアケアブランドへ成長しています。", viewProducts: "製品を見る", exportInquiry: "輸出のお問い合わせ" },
+      hero: { copy: "アロエのみずみずしさとデイリーケアの感性を込めたecoaloe。国内を越えて輸出市場でも選ばれるヘアケアブランドへ成長しています。", viewProducts: "製品を見る", exportInquiry: "輸出のお問い合わせ" },
       signature: { more: "もっと見る" },
       film: { title: "ブランド<br />フィルム" },
       support: { title: "ブランド<br />サポート", label1: "製造環境", title1: "清潔な製造環境", desc1: "徹底した衛生管理と体系的な生産工程で信頼できる製品をつくります。", label2: "包装システム", title2: "安全な<br />包装システム", desc2: "丈夫な包装と厳格な検品で国内外へ安全に配送します。", label3: "マーケティング支援", title3: "マーケティング支援", desc3: "POPやバナーなど販促物を支援し、ブランド成長を共に進めます。" },
     },
     store: { hair: "ヘア", hairDesc: "シャンプー · コンディショナー · ヘアケア", body: "ボディ", bodyDesc: "クレンザー · ボディエッセンス · セット", face: "フェイス", faceDesc: "デイリーケアライン", allProducts: "全製品", category: { all: "全体", hair: "ヘア", body: "ボディ", face: "フェイス", hairTitle: "ヘア製品", bodyTitle: "ボディ製品", faceTitle: "フェイス製品", hairPanel: "ヘア", hairPanelDesc: "シャンプー · コンディショナー · ヘアケア", bodyPanel: "ボディ", bodyPanelDesc: "クレンザー · ボディエッセンス · セット", facePanel: "フェイス", facePanelDesc: "デイリーケアライン", emptyTitle: "{category}製品準備中", emptyDesc: "現在登録された{category}製品はありません。今後更新予定です。" }, buy: "購入する", pendingPrice: "価格確認中" },
-    proposal: { metaTitle: "ROSEE ECO | 輸出・協力提案", title: "輸出・協力会社 製品/商品 提案案内", required: "* 必須入力", companyInfo: "協力会社情報", inquiry: "相談書作成", reset: "初期化", complete: "完了" },
+    proposal: { metaTitle: "ecoaloe | 輸出・協力提案", title: "輸出・協力会社 製品/商品 提案案内", required: "* 必須入力", companyInfo: "協力会社情報", inquiry: "相談書作成", reset: "初期化", complete: "完了" },
   },
   "zh-CN": {
-    meta: { title: "ROSEE ECO ALOE | 品牌页面" },
+    meta: { title: "ecoaloe | 头发与身体护理品牌" },
     nav: { lineup: "产品系列", store: "商店", brand: "品牌", export: "出口国家", proposal: "出口&合作提案", allProducts: "全部产品" },
-    home: { hero: { copy: "ROSEE ECO 以清爽芦荟水润感和日常护理理念打造产品线，正在成长为出口市场持续复购的护发品牌。", viewProducts: "查看产品", exportInquiry: "出口咨询" }, signature: { more: "查看更多" }, film: { title: "品牌<br />影片" }, support: { title: "品牌<br />支持", label1: "生产环境", title1: "洁净生产环境", desc1: "以严格卫生管理和系统化生产流程打造可信赖产品。", label2: "包装系统", title2: "安全<br />包装系统", desc2: "通过坚固包装和严格检查，安全配送至国内外。", label3: "营销支持", title3: "营销支持", desc3: "提供POP、横幅等宣传物料，共同推动品牌成长。" } },
+    home: { hero: { copy: "ecoaloe 以清爽芦荟水润感和日常护理理念打造产品线，正在成长为出口市场持续复购的护发品牌。", viewProducts: "查看产品", exportInquiry: "出口咨询" }, signature: { more: "查看更多" }, film: { title: "品牌<br />影片" }, support: { title: "品牌<br />支持", label1: "生产环境", title1: "洁净生产环境", desc1: "以严格卫生管理和系统化生产流程打造可信赖产品。", label2: "包装系统", title2: "安全<br />包装系统", desc2: "通过坚固包装和严格检查，安全配送至国内外。", label3: "营销支持", title3: "营销支持", desc3: "提供POP、横幅等宣传物料，共同推动品牌成长。" } },
     store: { hair: "头发护理", hairDesc: "洗发水 · 护发素 · 头发护理", body: "身体护理", bodyDesc: "沐浴露 · 身体精华 · 套装", face: "面部护理", faceDesc: "日常护理系列", allProducts: "全部产品", category: { all: "全部", hair: "头发", body: "身体", face: "面部", hairTitle: "头发护理产品", bodyTitle: "身体护理产品", faceTitle: "面部护理产品", hairPanel: "头发护理", hairPanelDesc: "洗发水 · 护发素 · 头发护理", bodyPanel: "身体护理", bodyPanelDesc: "沐浴露 · 身体精华 · 套装", facePanel: "面部护理", facePanelDesc: "日常护理系列", emptyTitle: "{category}产品准备中", emptyDesc: "目前暂无{category}产品信息，后续将更新。" }, buy: "购买", pendingPrice: "价格待确认" },
-    proposal: { metaTitle: "ROSEE ECO | 出口&合作提案", title: "出口&合作企业产品/商品提案指南", required: "* 必填", companyInfo: "合作企业信息", inquiry: "填写咨询", reset: "重置", complete: "完成" },
+    proposal: { metaTitle: "ecoaloe | 出口&合作提案", title: "出口&合作企业产品/商品提案指南", required: "* 必填", companyInfo: "合作企业信息", inquiry: "填写咨询", reset: "重置", complete: "完成" },
   },
   vi: {
-    meta: { title: "ROSEE ECO ALOE | Trang thương hiệu" },
+    meta: { title: "ecoaloe | Thương hiệu chăm sóc tóc và cơ thể" },
     nav: { lineup: "Dòng sản phẩm", store: "Cửa hàng", brand: "Thương hiệu", export: "Thị trường xuất khẩu", proposal: "Đề xuất xuất khẩu & hợp tác", allProducts: "Tất cả sản phẩm" },
-    home: { hero: { copy: "ROSEE ECO mang cảm giác dưỡng ẩm tươi mát từ lô hội vào chăm sóc hằng ngày, phát triển thành thương hiệu chăm sóc tóc được thị trường xuất khẩu tìm lại.", viewProducts: "Xem sản phẩm", exportInquiry: "Liên hệ xuất khẩu" }, signature: { more: "Xem thêm" }, film: { title: "Phim<br />thương hiệu" }, support: { title: "Hỗ trợ<br />thương hiệu", label1: "Sản xuất", title1: "Môi trường sản xuất sạch", desc1: "Quản lý vệ sinh nghiêm ngặt và quy trình có hệ thống tạo nên sản phẩm đáng tin cậy.", label2: "Đóng gói", title2: "Hệ thống<br />đóng gói an toàn", desc2: "Bao bì chắc chắn và kiểm tra kỹ giúp giao hàng an toàn trong và ngoài nước.", label3: "Marketing", title3: "Hỗ trợ marketing", desc3: "Hỗ trợ POP, banner và tài liệu quảng bá để cùng phát triển thương hiệu." } },
+    home: { hero: { copy: "ecoaloe mang cảm giác dưỡng ẩm tươi mát từ lô hội vào chăm sóc hằng ngày, phát triển thành thương hiệu chăm sóc tóc được thị trường xuất khẩu tìm lại.", viewProducts: "Xem sản phẩm", exportInquiry: "Liên hệ xuất khẩu" }, signature: { more: "Xem thêm" }, film: { title: "Phim<br />thương hiệu" }, support: { title: "Hỗ trợ<br />thương hiệu", label1: "Sản xuất", title1: "Môi trường sản xuất sạch", desc1: "Quản lý vệ sinh nghiêm ngặt và quy trình có hệ thống tạo nên sản phẩm đáng tin cậy.", label2: "Đóng gói", title2: "Hệ thống<br />đóng gói an toàn", desc2: "Bao bì chắc chắn và kiểm tra kỹ giúp giao hàng an toàn trong và ngoài nước.", label3: "Marketing", title3: "Hỗ trợ marketing", desc3: "Hỗ trợ POP, banner và tài liệu quảng bá để cùng phát triển thương hiệu." } },
     store: { hair: "Tóc", hairDesc: "Dầu gội · Dầu xả · Chăm sóc tóc", body: "Cơ thể", bodyDesc: "Sữa tắm · Tinh chất body · Bộ sản phẩm", face: "Mặt", faceDesc: "Dòng chăm sóc hằng ngày", allProducts: "Tất cả sản phẩm", category: { all: "Tất cả", hair: "Tóc", body: "Cơ thể", face: "Mặt", hairTitle: "Sản phẩm tóc", bodyTitle: "Sản phẩm body", faceTitle: "Sản phẩm mặt", hairPanel: "Tóc", hairPanelDesc: "Dầu gội · Dầu xả · Chăm sóc tóc", bodyPanel: "Cơ thể", bodyPanelDesc: "Sữa tắm · Tinh chất body · Bộ sản phẩm", facePanel: "Mặt", facePanelDesc: "Dòng chăm sóc hằng ngày", emptyTitle: "Sản phẩm {category} đang chuẩn bị", emptyDesc: "Hiện chưa có sản phẩm {category}; thông tin sẽ được cập nhật sau." }, buy: "Mua hàng", pendingPrice: "Đang xác nhận giá" },
-    proposal: { metaTitle: "ROSEE ECO | Đề xuất xuất khẩu & hợp tác", title: "Hướng dẫn đề xuất sản phẩm/hàng hóa đối tác", required: "* Bắt buộc", companyInfo: "Thông tin đối tác", inquiry: "Viết nội dung tư vấn", reset: "Đặt lại", complete: "Hoàn tất" },
+    proposal: { metaTitle: "ecoaloe | Đề xuất xuất khẩu & hợp tác", title: "Hướng dẫn đề xuất sản phẩm/hàng hóa đối tác", required: "* Bắt buộc", companyInfo: "Thông tin đối tác", inquiry: "Viết nội dung tư vấn", reset: "Đặt lại", complete: "Hoàn tất" },
   },
   th: {
-    meta: { title: "ROSEE ECO ALOE | หน้าแบรนด์" },
+    meta: { title: "ecoaloe | แบรนด์ดูแลเส้นผมและผิวกาย" },
     nav: { lineup: "ไลน์สินค้า", store: "สโตร์", brand: "แบรนด์", export: "ตลาดส่งออก", proposal: "ข้อเสนอส่งออกและพาร์ตเนอร์", allProducts: "สินค้าทั้งหมด" },
-    home: { hero: { copy: "ROSEE ECO ถ่ายทอดความสดชื่นของว่านหางจระเข้สู่การดูแลประจำวัน และเติบโตเป็นแบรนด์ดูแลเส้นผมที่ตลาดส่งออกเลือกซ้ำ", viewProducts: "ดูสินค้า", exportInquiry: "ติดต่อส่งออก" }, signature: { more: "ดูเพิ่มเติม" }, film: { title: "แบรนด์<br />ฟิล์ม" }, support: { title: "การสนับสนุน<br />แบรนด์", label1: "การผลิต", title1: "สภาพแวดล้อมการผลิตที่สะอาด", desc1: "การจัดการสุขอนามัยอย่างเข้มงวดและกระบวนการผลิตที่เป็นระบบสร้างสินค้าที่น่าเชื่อถือ", label2: "บรรจุภัณฑ์", title2: "ระบบ<br />บรรจุภัณฑ์ปลอดภัย", desc2: "บรรจุภัณฑ์แข็งแรงและการตรวจสอบละเอียดช่วยให้จัดส่งได้ปลอดภัย", label3: "การตลาด", title3: "สนับสนุนการตลาด", desc3: "สนับสนุน POP แบนเนอร์ และสื่อส่งเสริมการขายเพื่อเติบโตไปด้วยกัน" } },
+    home: { hero: { copy: "ecoaloe ถ่ายทอดความสดชื่นของว่านหางจระเข้สู่การดูแลประจำวัน และเติบโตเป็นแบรนด์ดูแลเส้นผมที่ตลาดส่งออกเลือกซ้ำ", viewProducts: "ดูสินค้า", exportInquiry: "ติดต่อส่งออก" }, signature: { more: "ดูเพิ่มเติม" }, film: { title: "แบรนด์<br />ฟิล์ม" }, support: { title: "การสนับสนุน<br />แบรนด์", label1: "การผลิต", title1: "สภาพแวดล้อมการผลิตที่สะอาด", desc1: "การจัดการสุขอนามัยอย่างเข้มงวดและกระบวนการผลิตที่เป็นระบบสร้างสินค้าที่น่าเชื่อถือ", label2: "บรรจุภัณฑ์", title2: "ระบบ<br />บรรจุภัณฑ์ปลอดภัย", desc2: "บรรจุภัณฑ์แข็งแรงและการตรวจสอบละเอียดช่วยให้จัดส่งได้ปลอดภัย", label3: "การตลาด", title3: "สนับสนุนการตลาด", desc3: "สนับสนุน POP แบนเนอร์ และสื่อส่งเสริมการขายเพื่อเติบโตไปด้วยกัน" } },
     store: { hair: "ผม", hairDesc: "แชมพู · คอนดิชันเนอร์ · ดูแลเส้นผม", body: "ผิวกาย", bodyDesc: "คลีนเซอร์ · เอสเซนส์ผิวกาย · เซต", face: "ผิวหน้า", faceDesc: "ไลน์ดูแลประจำวัน", allProducts: "สินค้าทั้งหมด", category: { all: "ทั้งหมด", hair: "ผม", body: "ผิวกาย", face: "ผิวหน้า", hairTitle: "ผลิตภัณฑ์ผม", bodyTitle: "ผลิตภัณฑ์ผิวกาย", faceTitle: "ผลิตภัณฑ์ผิวหน้า", hairPanel: "ผม", hairPanelDesc: "แชมพู · คอนดิชันเนอร์ · ดูแลเส้นผม", bodyPanel: "ผิวกาย", bodyPanelDesc: "คลีนเซอร์ · เอสเซนส์ผิวกาย · เซต", facePanel: "ผิวหน้า", facePanelDesc: "ไลน์ดูแลประจำวัน", emptyTitle: "กำลังเตรียมสินค้า {category}", emptyDesc: "ยังไม่มีสินค้า {category} ที่ลงทะเบียน ข้อมูลจะอัปเดตภายหลัง" }, buy: "ซื้อ", pendingPrice: "รอยืนยันราคา" },
-    proposal: { metaTitle: "ROSEE ECO | ข้อเสนอส่งออกและพาร์ตเนอร์", title: "คู่มือข้อเสนอสินค้า/ผลิตภัณฑ์พาร์ตเนอร์", required: "* จำเป็น", companyInfo: "ข้อมูลบริษัทพาร์ตเนอร์", inquiry: "เขียนคำปรึกษา", reset: "รีเซ็ต", complete: "เสร็จสิ้น" },
+    proposal: { metaTitle: "ecoaloe | ข้อเสนอส่งออกและพาร์ตเนอร์", title: "คู่มือข้อเสนอสินค้า/ผลิตภัณฑ์พาร์ตเนอร์", required: "* จำเป็น", companyInfo: "ข้อมูลบริษัทพาร์ตเนอร์", inquiry: "เขียนคำปรึกษา", reset: "รีเซ็ต", complete: "เสร็จสิ้น" },
   },
   ru: {
-    meta: { title: "ROSEE ECO ALOE | Страница бренда" },
+    meta: { title: "ecoaloe | Бренд ухода за волосами и телом" },
     nav: { lineup: "Линейка", store: "Магазин", brand: "Бренд", export: "Экспортные рынки", proposal: "Экспорт и партнерство", allProducts: "Все продукты" },
-    home: { hero: { copy: "ROSEE ECO сочетает свежую увлажняющую силу алоэ и ежедневный уход, становясь брендом для повторных продаж на экспортных рынках.", viewProducts: "Смотреть продукты", exportInquiry: "Запрос по экспорту" }, signature: { more: "Подробнее" }, film: { title: "Фильм<br />бренда" }, support: { title: "Поддержка<br />бренда", label1: "Производство", title1: "Чистая производственная среда", desc1: "Строгая гигиена и системный процесс производства создают надежные продукты.", label2: "Упаковка", title2: "Безопасная<br />система упаковки", desc2: "Прочная упаковка и тщательная проверка обеспечивают безопасную доставку.", label3: "Маркетинг", title3: "Маркетинговая поддержка", desc3: "Мы поддерживаем POP-материалы, баннеры и рекламные инструменты для роста бренда." } },
+    home: { hero: { copy: "ecoaloe сочетает свежую увлажняющую силу алоэ и ежедневный уход, становясь брендом для повторных продаж на экспортных рынках.", viewProducts: "Смотреть продукты", exportInquiry: "Запрос по экспорту" }, signature: { more: "Подробнее" }, film: { title: "Фильм<br />бренда" }, support: { title: "Поддержка<br />бренда", label1: "Производство", title1: "Чистая производственная среда", desc1: "Строгая гигиена и системный процесс производства создают надежные продукты.", label2: "Упаковка", title2: "Безопасная<br />система упаковки", desc2: "Прочная упаковка и тщательная проверка обеспечивают безопасную доставку.", label3: "Маркетинг", title3: "Маркетинговая поддержка", desc3: "Мы поддерживаем POP-материалы, баннеры и рекламные инструменты для роста бренда." } },
     store: { hair: "Волосы", hairDesc: "Шампунь · Кондиционер · Уход", body: "Тело", bodyDesc: "Очищение · Эссенция · Набор", face: "Лицо", faceDesc: "Линейка ежедневного ухода", allProducts: "Все продукты", category: { all: "Все", hair: "Волосы", body: "Тело", face: "Лицо", hairTitle: "Продукты для волос", bodyTitle: "Продукты для тела", faceTitle: "Продукты для лица", hairPanel: "Волосы", hairPanelDesc: "Шампунь · Кондиционер · Уход", bodyPanel: "Тело", bodyPanelDesc: "Очищение · Эссенция · Набор", facePanel: "Лицо", facePanelDesc: "Линейка ежедневного ухода", emptyTitle: "Продукты {category} готовятся", emptyDesc: "Пока нет зарегистрированных продуктов {category}. Информация будет обновлена позже." }, buy: "Купить", pendingPrice: "Цена уточняется" },
-    proposal: { metaTitle: "ROSEE ECO | Экспорт и партнерство", title: "Руководство по предложению продуктов для партнеров", required: "* Обязательно", companyInfo: "Информация о партнере", inquiry: "Форма запроса", reset: "Сброс", complete: "Готово" },
+    proposal: { metaTitle: "ecoaloe | Экспорт и партнерство", title: "Руководство по предложению продуктов для партнеров", required: "* Обязательно", companyInfo: "Информация о партнере", inquiry: "Форма запроса", reset: "Сброс", complete: "Готово" },
   },
   uz: {
-    meta: { title: "ROSEE ECO ALOE | Brend sahifasi" },
+    meta: { title: "ecoaloe | Soch va tana parvarishi brendi" },
     nav: { lineup: "Mahsulotlar", store: "Do‘kon", brand: "Brend", export: "Eksport bozorlari", proposal: "Eksport va hamkorlik taklifi", allProducts: "Barcha mahsulotlar" },
-    home: { hero: { copy: "ROSEE ECO aloe namligini kundalik parvarish hissi bilan birlashtirib, eksport bozorlarida qayta izlanadigan soch parvarishi brendiga aylanmoqda.", viewProducts: "Mahsulotlarni ko‘rish", exportInquiry: "Eksport bo‘yicha aloqa" }, signature: { more: "Ko‘proq" }, film: { title: "Brend<br />filmi" }, support: { title: "Brend<br />qo‘llab-quvvatlovi", label1: "Ishlab chiqarish", title1: "Toza ishlab chiqarish muhiti", desc1: "Qattiq gigiyena nazorati va tizimli jarayon ishonchli mahsulot yaratadi.", label2: "Qadoqlash", title2: "Xavfsiz<br />qadoqlash tizimi", desc2: "Mustahkam qadoq va puxta tekshiruv mahsulotni xavfsiz yetkazadi.", label3: "Marketing", title3: "Marketing yordami", desc3: "POP, banner va reklama materiallari bilan brend o‘sishini qo‘llab-quvvatlaymiz." } },
+    home: { hero: { copy: "ecoaloe aloe namligini kundalik parvarish hissi bilan birlashtirib, eksport bozorlarida qayta izlanadigan soch parvarishi brendiga aylanmoqda.", viewProducts: "Mahsulotlarni ko‘rish", exportInquiry: "Eksport bo‘yicha aloqa" }, signature: { more: "Ko‘proq" }, film: { title: "Brend<br />filmi" }, support: { title: "Brend<br />qo‘llab-quvvatlovi", label1: "Ishlab chiqarish", title1: "Toza ishlab chiqarish muhiti", desc1: "Qattiq gigiyena nazorati va tizimli jarayon ishonchli mahsulot yaratadi.", label2: "Qadoqlash", title2: "Xavfsiz<br />qadoqlash tizimi", desc2: "Mustahkam qadoq va puxta tekshiruv mahsulotni xavfsiz yetkazadi.", label3: "Marketing", title3: "Marketing yordami", desc3: "POP, banner va reklama materiallari bilan brend o‘sishini qo‘llab-quvvatlaymiz." } },
     store: { hair: "Soch", hairDesc: "Shampun · Konditsioner · Soch parvarishi", body: "Tana", bodyDesc: "Tozalagich · Tana essensiyasi · To‘plam", face: "Yuz", faceDesc: "Kundalik parvarish liniyasi", allProducts: "Barcha mahsulotlar", category: { all: "Barchasi", hair: "Soch", body: "Tana", face: "Yuz", hairTitle: "Soch mahsulotlari", bodyTitle: "Tana mahsulotlari", faceTitle: "Yuz mahsulotlari", hairPanel: "Soch", hairPanelDesc: "Shampun · Konditsioner · Soch parvarishi", bodyPanel: "Tana", bodyPanelDesc: "Tozalagich · Tana essensiyasi · To‘plam", facePanel: "Yuz", facePanelDesc: "Kundalik parvarish liniyasi", emptyTitle: "{category} mahsulotlari tayyorlanmoqda", emptyDesc: "Hozircha {category} mahsulotlari yo‘q. Ma’lumot keyin yangilanadi." }, buy: "Xarid qilish", pendingPrice: "Narx aniqlanmoqda" },
-    proposal: { metaTitle: "ROSEE ECO | Eksport va hamkorlik taklifi", title: "Hamkor mahsulot taklifi bo‘yicha qo‘llanma", required: "* Majburiy", companyInfo: "Hamkor kompaniya ma’lumoti", inquiry: "Murojaat shakli", reset: "Tozalash", complete: "Yakunlash" },
+    proposal: { metaTitle: "ecoaloe | Eksport va hamkorlik taklifi", title: "Hamkor mahsulot taklifi bo‘yicha qo‘llanma", required: "* Majburiy", companyInfo: "Hamkor kompaniya ma’lumoti", inquiry: "Murojaat shakli", reset: "Tozalash", complete: "Yakunlash" },
   },
 };
 
