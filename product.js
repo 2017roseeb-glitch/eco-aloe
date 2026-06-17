@@ -298,7 +298,7 @@ function renderCatalog() {
           ${
             isExportOnly
               ? `<span class="buy-button is-disabled" aria-disabled="true">${i18n("store.exportOnly", "수출전용상품")}</span>`
-              : `<a class="buy-button" href="${buyLink}"${productBuyLinks[key] ? ' target="_blank" rel="noopener noreferrer"' : ""}>${i18n("store.buy", "구매하기")}</a>`
+              : `<a class="buy-button" href="${buyLink}"${productBuyLinks[key] ? ' target="_blank" rel="noopener"' : ""}>${i18n("store.buy", "구매하기")}</a>`
           }
         </article>
       `;
