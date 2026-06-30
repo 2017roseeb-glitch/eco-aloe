@@ -57,7 +57,7 @@ const catalogProducts = [
   ["에코 알로에 바디 에센스", "500ml", "16,000원", "assets/cat-body-essence-pack.png", "bodyEssence"],
   ["에코 로즈 바디 클렌저", "760ml", "16,000원", "assets/eco-rose-body-cleanser.png", "roseCleanser"],
   ["에코 로즈 바디 에센스", "530ml", "16,000원", "assets/eco-rose-body-essence.png", "roseEssence"],
-  ["로제 에코 라임민트 바디 2종세트", "세트구성", "38,000원", "assets/eco-lime-mint-body-set.jpg", "limeMintSet"],
+  ["에코 라임민트 바디 2종세트", "세트구성", "38,000원", "assets/eco-lime-mint-body-set.jpg", "limeMintSet"],
   ["에코 알로에 모이스처 클렌징폼", "200ml", "15,000원", "assets/aloe-moisture-cleansing-foam.jpg", "bodySet"],
 ];
 

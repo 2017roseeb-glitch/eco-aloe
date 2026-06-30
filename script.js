@@ -180,9 +180,9 @@ if (proposalForm instanceof HTMLFormElement) {
       .join("-");
     const email = `${getValue("emailId")}@${getValue("emailDomain")}`;
     const phone = `${getValue("phonePrefix")} ${getValue("phoneNumber")}`;
-    const subject = `[ROSEE ECO 수출&협력 제안] ${getValue("subject")}`;
+    const subject = `[에코알로에 수출&협력 제안] ${getValue("subject")}`;
     const body = [
-      "ROSEE ECO 수출&협력 제안",
+      "에코알로에 수출&협력 제안",
       "",
       `[협력업체 정보]`,
       `업체명: ${getValue("companyName")}`,
