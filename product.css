@@ -256,11 +256,15 @@ body.quick-always .quick-actions {
 
 .store-banner p {
   color: #fff;
-  font-size: clamp(42px, 6vw, 92px);
+  font-size: clamp(32px, 4.4vw, 68px);
   font-weight: 900;
   letter-spacing: -0.04em;
-  line-height: 1;
+  line-height: 1.12;
   margin: 0;
+}
+
+.store-banner p span {
+  display: block;
 }
 
 .store-banner + .category-section {
@@ -648,9 +652,14 @@ body.is-category-store .catalog-section {
   display: inline-flex;
 }
 
-.catalog-section.is-category-view .catalog-card img {
+.catalog-section.is-category-view .catalog-image {
   height: clamp(170px, 16vw, 230px);
   margin: 0 auto 16px;
+}
+
+.catalog-section.is-category-view .catalog-card img {
+  height: 100%;
+  margin: 0;
 }
 
 .catalog-section.is-category-view .catalog-card h3 {
@@ -684,6 +693,7 @@ body.is-category-store .catalog-section {
   flex-direction: column;
   min-height: 400px;
   padding: 22px 22px 16px;
+  position: relative;
 }
 
 .catalog-category {
@@ -693,15 +703,117 @@ body.is-category-store .catalog-section {
   display: inline-flex;
   font-size: 12px;
   font-weight: 900;
-  margin-bottom: 14px;
   padding: 7px 12px;
+  left: 22px;
+  margin-bottom: 0;
+  position: absolute;
+  top: 22px;
+  z-index: 2;
+}
+
+.catalog-image {
+  height: 248px;
+  margin: 36px auto 2px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .catalog-card img {
-  height: 248px;
-  margin: 0 auto 14px;
+  height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+.catalog-card.product-aloeShampooNew,
+.catalog-card.product-aloeConditionerNew {
+  align-items: center;
+  background: var(--deep);
+  border: 0;
+  color: #fff;
+  justify-content: flex-end;
+  min-height: 520px;
+  overflow: hidden;
+  padding: 0 24px 28px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.32);
+}
+
+.catalog-card.product-aloeShampooNew::after,
+.catalog-card.product-aloeConditionerNew::after {
+  background: linear-gradient(180deg, rgba(5, 12, 8, 0) 38%, rgba(5, 12, 8, 0.48) 68%, rgba(5, 12, 8, 0.72) 100%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.catalog-card.product-aloeShampooNew .catalog-category,
+.catalog-card.product-aloeConditionerNew .catalog-category {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  left: 22px;
+  top: 22px;
+  z-index: 3;
+  backdrop-filter: blur(14px);
+}
+
+.catalog-card.product-aloeShampooNew .catalog-image,
+.catalog-card.product-aloeConditionerNew .catalog-image {
+  height: 100%;
+  inset: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.catalog-card.product-aloeShampooNew img,
+.catalog-card.product-aloeConditionerNew img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.catalog-card.product-aloeShampooNew h3,
+.catalog-card.product-aloeConditionerNew h3,
+.catalog-card.product-aloeShampooNew .catalog-card-actions,
+.catalog-card.product-aloeShampooNew .buy-button,
+.catalog-card.product-aloeConditionerNew .catalog-card-actions,
+.catalog-card.product-aloeConditionerNew .buy-button {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.catalog-card.product-aloeShampooNew h3,
+.catalog-card.product-aloeConditionerNew h3 {
+  font-size: 18px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  margin-top: auto;
+  min-height: 0;
+}
+
+.catalog-card.product-aloeShampooNew p,
+.catalog-card.product-aloeConditionerNew p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.catalog-card.product-aloeShampooNew .buy-button,
+.catalog-card.product-aloeConditionerNew .buy-button {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  margin-top: 0;
+  min-height: 48px;
+  backdrop-filter: blur(16px);
+}
+
+.catalog-card.product-aloeShampooNew .buy-button:hover,
+.catalog-card.product-aloeConditionerNew .buy-button:hover {
+  background: rgba(255, 255, 255, 0.26);
+  border-color: rgba(255, 255, 255, 0.72);
+  color: #fff;
 }
 
 .catalog-card h3 {
@@ -750,6 +862,16 @@ body.is-category-store .catalog-section {
   text-align: center;
 }
 
+.catalog-card-actions {
+  display: grid;
+  gap: 18px;
+  width: 100%;
+}
+
+.catalog-card:not(.product-aloeShampooNew):not(.product-aloeConditionerNew) .catalog-card-actions {
+  gap: 12px;
+}
+
 .buy-button {
   align-items: center;
   border: 1px solid rgba(18, 32, 25, 0.22);
@@ -758,7 +880,7 @@ body.is-category-store .catalog-section {
   font-size: 14px;
   font-weight: 900;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 0;
   min-height: 44px;
   padding: 0 18px;
   width: 100%;
@@ -952,7 +1074,7 @@ body.is-category-store .catalog-section {
   }
 
   .store-banner p {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .store-banner + .category-section,
@@ -1033,10 +1155,38 @@ body.is-category-store .catalog-section {
     padding: 12px 10px;
   }
 
+  .catalog-image,
+  .catalog-section.is-category-view .catalog-image {
+    height: 150px;
+    margin: 36px auto 4px;
+  }
+
   .catalog-card img,
   .catalog-section.is-category-view .catalog-card img {
-    height: 150px;
-    margin-bottom: 12px;
+    height: 100%;
+  }
+
+  .catalog-category,
+  .catalog-card.product-aloeShampooNew .catalog-category,
+  .catalog-card.product-aloeConditionerNew .catalog-category {
+    left: 10px;
+    top: 12px;
+  }
+
+  .catalog-card.product-aloeShampooNew,
+  .catalog-card.product-aloeConditionerNew,
+  .catalog-section.is-category-view .catalog-card.product-aloeShampooNew,
+  .catalog-section.is-category-view .catalog-card.product-aloeConditionerNew {
+    height: 420px;
+    min-height: 420px;
+    padding: 0 14px 20px;
+  }
+
+  .catalog-card.product-aloeShampooNew .catalog-image,
+  .catalog-card.product-aloeConditionerNew .catalog-image {
+    height: 100%;
+    margin: 0;
+    width: 100%;
   }
 
   .catalog-category {
@@ -1082,9 +1232,31 @@ body.is-category-store .catalog-section {
     letter-spacing: -0.04em;
   }
 
+  .catalog-card.product-aloeShampooNew h3,
+  .catalog-card.product-aloeConditionerNew h3,
+  .catalog-section.is-category-view .catalog-card.product-aloeShampooNew h3,
+  .catalog-section.is-category-view .catalog-card.product-aloeConditionerNew h3 {
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .catalog-card.product-aloeShampooNew p,
+  .catalog-card.product-aloeConditionerNew p,
+  .catalog-section.is-category-view .catalog-card.product-aloeShampooNew p,
+  .catalog-section.is-category-view .catalog-card.product-aloeConditionerNew p {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 11px;
+  }
+
   .catalog-card p,
   .catalog-section.is-category-view .catalog-card p {
     font-size: 11px;
+  }
+
+  .catalog-card-actions {
+    gap: 14px;
   }
 
   .buy-button,

@@ -4,7 +4,7 @@ const bestProducts = [
     title: "에코 알로에 헤어샴푸 760ml",
     body:
       "유기농 알로에 15%와 나노 입자화 공법을 담아 두피를 마일드하게 세정하고, 매일 쓰기 좋은 산뜻한 사용감을 전하는 에코 대표 샴푸입니다.",
-    meta: "760ml | 13,000원",
+    meta: "760ml | 14,000원",
     image: "assets/best-aloe-shampoo.png",
     alt: "에코 알로에 헤어샴푸",
   },
@@ -31,17 +31,19 @@ const bestProducts = [
     title: "에코 진생 리바이탈 헤어샴푸 760ml",
     body:
       "인삼 이미지를 담은 리바이탈 라인으로 약하고 손상된 모발에 생기와 영양감을 더해 에코 시리즈 안에서 프리미엄 인상을 만드는 제품입니다.",
-    meta: "760ml | 16,000원",
+    meta: "760ml | 18,000원",
     image: "assets/best-ginseng.png",
     alt: "에코 진생 리바이탈",
   },
 ];
 
 const catalogProducts = [
-  ["에코 알로에 헤어샴푸", "760ml", "13,000원", "assets/best-aloe-shampoo.png", "aloeShampoo"],
+  ["에코 알로에 헤어샴푸 NEW", "750ml", "14,000원", "assets/eco-aloe-hair-shampoo-750-new.png", "aloeShampooNew"],
+  ["에코 알로에 헤어 컨디셔너 NEW", "750ml", "14,000원", "assets/eco-aloe-hair-conditioner-750-new.png", "aloeConditionerNew"],
+  ["에코 알로에 헤어샴푸", "760ml", "14,000원", "assets/best-aloe-shampoo.png", "aloeShampoo"],
   ["에코 흑마늘 헤어샴푸", "760ml", "15,000원", "assets/best-black-garlic.png", "blackGarlic"],
   ["에코 아르간 헤어샴푸", "760ml", "15,000원", "assets/best-argan.png", "arganShampoo"],
-  ["에코 진생 리바이탈 헤어샴푸", "760ml", "16,000원", "assets/best-ginseng.png", "ginseng"],
+  ["에코 진생 리바이탈 헤어샴푸", "760ml", "18,000원", "assets/best-ginseng.png", "ginseng"],
   ["에코 알로에 헤어 컨디셔너", "760ml", "14,000원", "assets/cat-aloe-conditioner-pack.png", "aloeConditioner"],
   ["에코 알로에 헤어 트리트먼트", "760ml", "14,000원", "assets/cat-treatment-pack.png", "treatment"],
   ["에코 알로에 헤어젤", "530ml", "13,000원", "assets/cat-hair-gel-pack.png", "hairGel"],
@@ -61,8 +63,9 @@ const catalogProducts = [
   ["에코 알로에 모이스처 클렌징폼", "200ml", "15,000원", "assets/aloe-moisture-cleansing-foam.jpg", "bodySet"],
 ];
 
-const exportOnlyProductKeys = new Set(["blackGarlic", "arganShampoo", "ginseng"]);
+const exportOnlyProductKeys = new Set(["aloeShampoo", "blackGarlic", "arganShampoo", "ginseng"]);
 const productBuyLinks = {
+  aloeShampooNew: "https://smartstore.naver.com/roseeb/products/2465990391",
   aloeShampoo: "https://smartstore.naver.com/roseeb/products/2465990391",
   aloeConditioner: "https://smartstore.naver.com/roseeb/products/2465990403",
   treatment: "https://smartstore.naver.com/roseeb/products/2465990262",
@@ -178,6 +181,11 @@ function formatCatalogValue(value) {
 }
 
 function splitCatalogTitle(title) {
+  if (title === "에코 알로에 헤어 컨디셔너 NEW") return ["에코 알로에", "헤어 컨디셔너 NEW"];
+  if (title === "Eco Aloe Hair Conditioner NEW") return ["Eco Aloe", "Hair Conditioner NEW"];
+  if (title === "에코 알로에 헤어샴푸 NEW") return ["에코 알로에", "헤어샴푸 NEW"];
+  if (title === "Eco Aloe Hair Shampoo NEW") return ["Eco Aloe", "Hair Shampoo NEW"];
+
   const words = title.trim().split(/\s+/);
   if (words.length < 2) return [title, ""];
 
@@ -290,16 +298,20 @@ function renderCatalog() {
         return `
         <article class="catalog-card product-${key}">
           <span class="catalog-category">${getCategoryMeta(category).label}</span>
-          <img src="${image}" alt="${displayName}" />
+          <div class="catalog-image">
+            <img src="${image}" alt="${displayName}" />
+          </div>
           <h3 class="${titleClass.trim()}" aria-label="${displayName}">
             <span>${titleLine1}</span><span>${titleLine2}</span>
           </h3>
-          <p>${formatCatalogValue(volume)} · ${formatCatalogValue(price)}</p>
-          ${
-            isExportOnly
-              ? `<span class="buy-button is-disabled" aria-disabled="true">${i18n("store.exportOnly", "수출전용상품")}</span>`
-              : `<a class="buy-button" href="${buyLink}"${productBuyLinks[key] ? ' target="_blank" rel="noopener"' : ""}>${i18n("store.buy", "구매하기")}</a>`
-          }
+          <div class="catalog-card-actions">
+            <p>${formatCatalogValue(volume)} · ${formatCatalogValue(price)}</p>
+            ${
+              isExportOnly
+                ? `<span class="buy-button is-disabled" aria-disabled="true">${i18n("store.exportOnly", "수출전용상품")}</span>`
+                : `<a class="buy-button" href="${buyLink}"${productBuyLinks[key] ? ' target="_blank" rel="noopener"' : ""}>${i18n("store.buy", "구매하기")}</a>`
+            }
+          </div>
         </article>
       `;
       }
