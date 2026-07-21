@@ -66,6 +66,7 @@ const catalogProducts = [
 const exportOnlyProductKeys = new Set(["aloeShampoo", "blackGarlic", "arganShampoo", "ginseng"]);
 const productBuyLinks = {
   aloeShampooNew: "https://smartstore.naver.com/roseeb/products/2465990391",
+  aloeConditionerNew: "https://smartstore.naver.com/roseeb/products/2465990403",
   aloeShampoo: "https://smartstore.naver.com/roseeb/products/2465990391",
   aloeConditioner: "https://smartstore.naver.com/roseeb/products/2465990403",
   treatment: "https://smartstore.naver.com/roseeb/products/2465990262",
