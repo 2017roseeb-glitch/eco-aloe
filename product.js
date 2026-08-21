@@ -64,27 +64,28 @@ const catalogProducts = [
 ];
 
 const exportOnlyProductKeys = new Set(["aloeShampoo", "blackGarlic", "arganShampoo", "ginseng"]);
+const officialMallLink = "https://roseeshop.com/goods/goods_list.php?cateCd=003003";
 const productBuyLinks = {
-  aloeShampooNew: "https://smartstore.naver.com/roseeb/products/2465990391",
-  aloeConditionerNew: "https://smartstore.naver.com/roseeb/products/2465990403",
-  aloeShampoo: "https://smartstore.naver.com/roseeb/products/2465990391",
-  aloeConditioner: "https://smartstore.naver.com/roseeb/products/2465990403",
-  treatment: "https://smartstore.naver.com/roseeb/products/2465990262",
-  hairGel: "https://smartstore.naver.com/roseeb/products/2465990293",
-  multiEssence: "https://smartstore.naver.com/roseeb/products/2465990277",
-  hairSpray: "https://smartstore.naver.com/roseeb/products/2465990249",
-  coatingEssence: "https://smartstore.naver.com/roseeb/products/2465990237",
-  strongMist: "https://smartstore.naver.com/roseeb/products/2465990217",
-  arganOil: "https://smartstore.naver.com/roseeb/products/2465990206",
-  hairColor: "https://smartstore.naver.com/roseeb/products/13629283790",
-  aloeHairColor: "https://smartstore.naver.com/roseeb/products/13629311618",
-  curlingEssence: "https://smartstore.naver.com/roseeb/products/13629121940",
-  bodyCleanser: "https://smartstore.naver.com/roseeb/products/2465990355",
-  bodyEssence: "https://smartstore.naver.com/roseeb/products/2465990166",
-  roseCleanser: "https://smartstore.naver.com/roseeb/products/2465990310",
-  roseEssence: "https://smartstore.naver.com/roseeb/products/2465990338",
-  limeMintSet: "https://smartstore.naver.com/roseeb/products/7426703079",
-  bodySet: "https://smartstore.naver.com/roseeb/products/12843142273",
+  aloeShampooNew: officialMallLink,
+  aloeConditionerNew: officialMallLink,
+  aloeShampoo: officialMallLink,
+  aloeConditioner: officialMallLink,
+  treatment: officialMallLink,
+  hairGel: officialMallLink,
+  multiEssence: officialMallLink,
+  hairSpray: officialMallLink,
+  coatingEssence: officialMallLink,
+  strongMist: officialMallLink,
+  arganOil: officialMallLink,
+  hairColor: officialMallLink,
+  aloeHairColor: officialMallLink,
+  curlingEssence: officialMallLink,
+  bodyCleanser: officialMallLink,
+  bodyEssence: officialMallLink,
+  roseCleanser: officialMallLink,
+  roseEssence: officialMallLink,
+  limeMintSet: officialMallLink,
+  bodySet: officialMallLink,
 };
 
 let activeBest = 0;
