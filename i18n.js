@@ -213,6 +213,7 @@ const siteKo = {
     export: "수출국가",
     proposal: "수출&협력 제안",
     allProducts: "전제품",
+    productTypes: "제품타입별",
   },
   home: {
     hero: {
@@ -275,6 +276,7 @@ const siteKo = {
       emptyDesc: "현재 등록된 {category} 제품이 없습니다. 추후 제품 정보가 업데이트됩니다.",
     },
     buy: "구매하기",
+    detail: "제품 자세히보기",
     exportOnly: "수출전용상품",
     pendingPrice: "가격 확인 예정",
     productNames: {
@@ -453,6 +455,7 @@ const siteEn = {
     export: "Export Markets",
     proposal: "Export & Partner Proposal",
     allProducts: "All Products",
+    productTypes: "Product Types",
   },
   home: {
     hero: {
@@ -508,6 +511,7 @@ const siteEn = {
       emptyDesc: "There are no registered {category} products yet. Product information will be updated later.",
     },
     buy: "Buy",
+    detail: "View Details",
     exportOnly: "Export Only",
     pendingPrice: "Price TBC",
     productNames: {

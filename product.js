@@ -63,30 +63,10 @@ const catalogProducts = [
   ["에코 알로에 모이스처 클렌징폼", "200ml", "15,000원", "assets/aloe-moisture-cleansing-foam.jpg", "bodySet"],
 ];
 
-const exportOnlyProductKeys = new Set(["aloeShampoo", "blackGarlic", "arganShampoo", "ginseng"]);
-const officialMallLink = "https://roseeshop.com/goods/goods_list.php?cateCd=003003";
-const productBuyLinks = {
-  aloeShampooNew: officialMallLink,
-  aloeConditionerNew: officialMallLink,
-  aloeShampoo: officialMallLink,
-  aloeConditioner: officialMallLink,
-  treatment: officialMallLink,
-  hairGel: officialMallLink,
-  multiEssence: officialMallLink,
-  hairSpray: officialMallLink,
-  coatingEssence: officialMallLink,
-  strongMist: officialMallLink,
-  arganOil: officialMallLink,
-  hairColor: officialMallLink,
-  aloeHairColor: officialMallLink,
-  curlingEssence: officialMallLink,
-  bodyCleanser: officialMallLink,
-  bodyEssence: officialMallLink,
-  roseCleanser: officialMallLink,
-  roseEssence: officialMallLink,
-  limeMintSet: officialMallLink,
-  bodySet: officialMallLink,
-};
+const productDetailLinks = Object.fromEntries(
+  catalogProducts.map(([, , , , key]) => [key, `product-detail.html?product=${encodeURIComponent(key)}`])
+);
+const PRODUCT_LIST_RETURN_KEY = "eco-product-list-return";
 
 let activeBest = 0;
 
@@ -100,7 +80,9 @@ const catalogGrid = document.querySelector("[data-catalog-grid]");
 const catalogTitle = document.querySelector("[data-catalog-title]");
 const catalogDesc = document.querySelector("[data-catalog-desc]");
 const catalogSection = document.querySelector(".catalog-section");
+const categorySection = document.querySelector("#product-types");
 const categoryPanel = document.querySelector("[data-category-panel]");
+const productNavLinks = document.querySelectorAll("[data-product-nav]");
 const categoryLabels = {
   all: {
     title: "전제품",
@@ -156,6 +138,31 @@ function getSelectedCategory() {
   const params = new URLSearchParams(window.location.search);
   const category = params.get("category") || "all";
   return categoryLabels[category] ? category : "all";
+}
+
+function getProductMenuView(selectedCategory = getSelectedCategory()) {
+  if (selectedCategory !== "all") return "productTypes";
+  return window.location.hash === "#catalog" ? "all" : "productTypes";
+}
+
+function updateProductMenuView(selectedCategory = getSelectedCategory()) {
+  const menuView = getProductMenuView(selectedCategory);
+  const isProductTypesLanding = selectedCategory === "all" && menuView === "productTypes";
+  document.body.classList.toggle("is-all-products-view", menuView === "all");
+  document.body.classList.toggle("is-product-types-view", menuView === "productTypes");
+  document.body.classList.toggle("is-product-types-landing", isProductTypesLanding);
+  catalogSection?.setAttribute("aria-hidden", String(isProductTypesLanding));
+  productNavLinks.forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.productNav === menuView);
+  });
+}
+
+function scrollToCurrentProductAnchor() {
+  const target = window.location.hash === "#catalog" ? catalogSection : window.location.hash === "#product-types" ? categorySection : null;
+  if (!target) return;
+  window.requestAnimationFrame(() => {
+    target.scrollIntoView({ block: "start", behavior: "auto" });
+  });
 }
 
 function i18n(key, fallback = "") {
@@ -250,6 +257,7 @@ function renderCatalog() {
   const isCategoryView = selectedCategory !== "all";
 
   document.body.classList.toggle("is-category-store", isCategoryView);
+  updateProductMenuView(selectedCategory);
   if (isCategoryView && window.location.hash === "#catalog") {
     history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
     window.scrollTo({ top: 0 });
@@ -295,8 +303,7 @@ function renderCatalog() {
         const displayName = i18n(`store.productNames.${key}`, name);
         const titleClass = Array.from(displayName.replace(/\s/g, "")).length > 10 ? " is-long-title" : "";
         const [titleLine1, titleLine2] = splitCatalogTitle(displayName);
-        const isExportOnly = exportOnlyProductKeys.has(key);
-        const buyLink = productBuyLinks[key] || "proposal.html";
+        const detailLink = productDetailLinks[key] || "product-detail.html";
         return `
         <article class="catalog-card product-${key}">
           <span class="catalog-category">${getCategoryMeta(category).label}</span>
@@ -308,17 +315,51 @@ function renderCatalog() {
           </h3>
           <div class="catalog-card-actions">
             <p>${formatCatalogValue(volume)} · ${formatCatalogValue(price)}</p>
-            ${
-              isExportOnly
-                ? `<span class="buy-button is-disabled" aria-disabled="true">${i18n("store.exportOnly", "수출전용상품")}</span>`
-                : `<a class="buy-button" href="${buyLink}"${productBuyLinks[key] ? ' target="_blank" rel="noopener"' : ""}>${i18n("store.buy", "구매하기")}</a>`
-            }
+            <a class="buy-button" href="${detailLink}" data-product-detail-link="${key}">${i18n("store.detail", "제품 자세히보기")}</a>
           </div>
         </article>
       `;
       }
     )
     .join("");
+}
+
+function rememberProductListPosition(productKey) {
+  try {
+    window.sessionStorage?.setItem(
+      PRODUCT_LIST_RETURN_KEY,
+      JSON.stringify({
+        productKey,
+        scrollY: Math.max(0, Math.round(window.scrollY)),
+        url: window.location.href,
+      })
+    );
+  } catch {}
+}
+
+function restoreProductListPosition() {
+  let saved = null;
+  try {
+    saved = JSON.parse(window.sessionStorage?.getItem(PRODUCT_LIST_RETURN_KEY) || "null");
+  } catch {}
+  if (!saved?.url || typeof saved.scrollY !== "number") return false;
+
+  const savedUrl = new URL(saved.url, window.location.href);
+  const isSameList =
+    savedUrl.pathname === window.location.pathname &&
+    savedUrl.search === window.location.search &&
+    savedUrl.hash === window.location.hash;
+  if (!isSameList) return false;
+
+  try {
+    window.sessionStorage?.removeItem(PRODUCT_LIST_RETURN_KEY);
+  } catch {}
+
+  const scrollToSavedPosition = () => window.scrollTo({ top: saved.scrollY, left: 0, behavior: "auto" });
+  window.requestAnimationFrame(scrollToSavedPosition);
+  window.setTimeout(scrollToSavedPosition, 120);
+  window.setTimeout(scrollToSavedPosition, 420);
+  return true;
 }
 
 document.querySelector("[data-best-prev]")?.addEventListener("click", () => renderBest(activeBest - 1));
@@ -359,8 +400,21 @@ if (bestThumbs) {
   renderBest(0);
 }
 renderCatalog();
+if (!restoreProductListPosition()) scrollToCurrentProductAnchor();
 window.addEventListener("eco:languagechange", () => {
   renderBestThumbs();
   renderBest(activeBest);
   renderCatalog();
+  if (!restoreProductListPosition()) scrollToCurrentProductAnchor();
+});
+
+window.addEventListener("hashchange", () => {
+  renderCatalog();
+  scrollToCurrentProductAnchor();
+});
+
+document.addEventListener("click", (event) => {
+  const detailLink = event.target instanceof Element ? event.target.closest("[data-product-detail-link]") : null;
+  if (!(detailLink instanceof HTMLAnchorElement)) return;
+  rememberProductListPosition(detailLink.dataset.productDetailLink || "");
 });

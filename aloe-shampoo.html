@@ -6,7 +6,7 @@
     <title>에코알로에 스토어 | 헤어,바디 케어 제품</title>
     <meta name="description" content="에코알로에 베스트 제품과 전체 카탈로그 제품 소개 페이지입니다." />
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="product.css?v=20260825-product-types-only" />
   </head>
   <body class="quick-always">
     <header class="product-header">
@@ -14,8 +14,8 @@
         <img src="assets/menu-logo.png" alt="에코알로에" />
       </a>
       <nav aria-label="제품 페이지 이동">
-        <a class="is-active" href="aloe-shampoo.html" data-i18n="nav.store">스토어</a>
-        <a href="aloe-shampoo.html#catalog" data-i18n="nav.allProducts">전제품</a>
+        <a href="aloe-shampoo.html#catalog" data-product-nav="all" data-i18n="nav.allProducts">전제품</a>
+        <a class="is-active" href="aloe-shampoo.html#product-types" data-product-nav="productTypes" data-i18n="nav.productTypes">제품타입별</a>
         <a href="brand.html" data-i18n="nav.brand">브랜드</a>
       </nav>
       <a class="instagram-link" href="https://www.instagram.com/ecoaloe.korea?igsh=MTF1bDc4emUyenNnOA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="에코 알로에 인스타그램">
@@ -45,7 +45,7 @@
         <p><span>NEW 에코 알로에</span><span>샴푸, 컨디셔너 출시!</span></p>
       </section>
 
-      <section class="category-section" aria-label="제품 분류">
+      <section class="category-section" id="product-types" aria-label="제품 분류">
         <a class="category-card category-card-hair" href="aloe-shampoo.html?category=hair">
           <img src="assets/category-hair.jpg" alt="" />
           <div>
@@ -101,7 +101,7 @@
         </svg>
       </a>
     </nav>
-    <script src="i18n.js"></script>
-    <script src="product.js?v=20260706-new-shampoo-link"></script>
+    <script src="i18n.js?v=20260825-product-types-menu"></script>
+    <script src="product.js?v=20260825-product-types-only"></script>
   </body>
 </html>

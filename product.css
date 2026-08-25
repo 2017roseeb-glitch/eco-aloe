@@ -338,6 +338,15 @@ body.is-category-store .store-banner {
   display: none;
 }
 
+body.is-all-products-view .store-banner,
+body.is-all-products-view .category-section {
+  display: none;
+}
+
+body.is-product-types-landing .catalog-section {
+  display: none;
+}
+
 body.is-category-store {
   overflow-x: hidden;
   overflow-y: auto;
@@ -722,6 +731,19 @@ body.is-category-store .catalog-section {
   height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+.catalog-card.product-hairColor .catalog-image,
+.catalog-card.product-aloeHairColor .catalog-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-card.product-hairColor img,
+.catalog-card.product-aloeHairColor img {
+  height: 84%;
+  width: 84%;
 }
 
 .catalog-card.product-aloeShampooNew,
@@ -1112,6 +1134,15 @@ body.is-category-store .catalog-section {
     display: flex;
   }
 
+  body.is-all-products-view .store-banner,
+  body.is-all-products-view .category-section {
+    display: none;
+  }
+
+  body.is-product-types-landing .catalog-section {
+    display: none;
+  }
+
   body.is-category-store .catalog-section {
     padding: 26px 12px 64px;
   }
@@ -1164,6 +1195,12 @@ body.is-category-store .catalog-section {
   .catalog-card img,
   .catalog-section.is-category-view .catalog-card img {
     height: 100%;
+  }
+
+  .catalog-card.product-hairColor img,
+  .catalog-card.product-aloeHairColor img {
+    height: 78%;
+    width: 78%;
   }
 
   .catalog-category,
