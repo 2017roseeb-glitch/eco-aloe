@@ -201,7 +201,7 @@ if (proposalForm instanceof HTMLFormElement) {
       "개인정보 수집 및 이용 동의: 동의",
     ].join("\n");
 
-    window.location.href = `mailto:2017roseeb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:roseeb2017@naver.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
 

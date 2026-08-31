@@ -6,7 +6,7 @@ const baseKo = {
     description:
       "에코알로에는 알로에의 산뜻한 수분감과 데일리 케어 감성을 담은 헤어, 바디 케어 브랜드입니다.",
   },
-  nav: { lineup: "제품라인", export: "수출국가", sales: "100만 판매", contact: "비즈니스 문의" },
+  nav: { lineup: "제품라인", viewProducts: "제품보기", export: "수출국가", sales: "100만 판매", contact: "비즈니스 문의" },
   common: { explore: "Explore", learnMore: "더 알아보기", backHome: "메인으로" },
   home: {
     hero: {
@@ -208,6 +208,7 @@ const siteKo = {
   },
   nav: {
     lineup: "제품라인",
+    viewProducts: "제품보기",
     store: "스토어",
     brand: "브랜드",
     export: "수출국가",
@@ -391,6 +392,7 @@ const siteKo = {
     partnership: "DISTRIBUTION PARTNERSHIP",
     copy: "주소 복사",
     copied: "복사 완료",
+    requestInfo: "회사 연락처, 성함, 직급, 문의목적(B2B, 입점문의, 제품구입, 기타 등)을 함께 적어 보내주시면 빠르게 확인하겠습니다.",
     note: "본 메일은 유통 파트너십 문의 전용입니다 · 일반 소비자 문의는 공식 채널을 이용해 주세요",
   },
   proposal: {
@@ -432,7 +434,7 @@ const siteKo = {
     file: "첨부파일",
     browse: "찾아보기",
     fileHelp: "첨부파일은 jpg, png, pdf, xlsx 파일로 최대 5MB까지만 등록 가능합니다.",
-    fileAlert: "대용량 파일은 2017roseeb@gmail.com 으로 송부바랍니다.",
+    fileAlert: "대용량 파일은 roseeb2017@naver.com 으로 송부바랍니다.",
     captcha: "자동 등록 방지",
     refresh: "새로고침",
     doneTitle: "협력사 제품 제안 안내",
@@ -450,6 +452,7 @@ const siteEn = {
   },
   nav: {
     lineup: "Lineup",
+    viewProducts: "View Products",
     store: "Store",
     brand: "Brand",
     export: "Export Markets",
@@ -626,6 +629,7 @@ const siteEn = {
     partnership: "DISTRIBUTION PARTNERSHIP",
     copy: "Copy address",
     copied: "Copied",
+    requestInfo: "Please include your company contact number, name, title, and inquiry purpose such as B2B, retail placement, product purchase, or other details.",
     note: "This email is for distribution partnership inquiries · Please use the official channel for consumer inquiries",
   },
   proposal: {
@@ -667,7 +671,7 @@ const siteEn = {
     file: "Attachment",
     browse: "Browse",
     fileHelp: "Attachments may be jpg, png, pdf, or xlsx files up to 5MB.",
-    fileAlert: "For large files, please send them to 2017roseeb@gmail.com.",
+    fileAlert: "For large files, please send them to roseeb2017@naver.com.",
     captcha: "Anti-spam Check",
     refresh: "Refresh",
     doneTitle: "Partner Product Proposal Guide",
@@ -681,7 +685,7 @@ const siteEn = {
 const localized = {
   ja: {
     meta: { title: "ecoaloe | ヘア・ボディケアブランド" },
-    nav: { lineup: "製品ライン", store: "ストア", brand: "ブランド", export: "輸出国", proposal: "輸出・協力提案", allProducts: "全製品" },
+    nav: { lineup: "製品ライン", viewProducts: "製品を見る", store: "ストア", brand: "ブランド", export: "輸出国", proposal: "輸出・協力提案", allProducts: "全製品" },
     home: {
       hero: { copy: "アロエのみずみずしさとデイリーケアの感性を込めたecoaloe。国内を越えて輸出市場でも選ばれるヘアケアブランドへ成長しています。", viewProducts: "製品を見る", exportInquiry: "輸出のお問い合わせ" },
       signature: { more: "もっと見る" },
@@ -693,35 +697,35 @@ const localized = {
   },
   "zh-CN": {
     meta: { title: "ecoaloe | 头发与身体护理品牌" },
-    nav: { lineup: "产品系列", store: "商店", brand: "品牌", export: "出口国家", proposal: "出口&合作提案", allProducts: "全部产品" },
+    nav: { lineup: "产品系列", viewProducts: "查看产品", store: "商店", brand: "品牌", export: "出口国家", proposal: "出口&合作提案", allProducts: "全部产品" },
     home: { hero: { copy: "ecoaloe 以清爽芦荟水润感和日常护理理念打造产品线，正在成长为出口市场持续复购的护发品牌。", viewProducts: "查看产品", exportInquiry: "出口咨询" }, signature: { more: "查看更多" }, film: { title: "品牌<br />影片" }, support: { title: "品牌<br />支持", label1: "生产环境", title1: "洁净生产环境", desc1: "以严格卫生管理和系统化生产流程打造可信赖产品。", label2: "包装系统", title2: "安全<br />包装系统", desc2: "通过坚固包装和严格检查，安全配送至国内外。", label3: "营销支持", title3: "营销支持", desc3: "提供POP、横幅等宣传物料，共同推动品牌成长。" } },
     store: { hair: "头发护理", hairDesc: "洗发水 · 护发素 · 头发护理", body: "身体护理", bodyDesc: "沐浴露 · 身体精华 · 套装", face: "面部护理", faceDesc: "日常护理系列", allProducts: "全部产品", category: { all: "全部", hair: "头发", body: "身体", face: "面部", hairTitle: "头发护理产品", bodyTitle: "身体护理产品", faceTitle: "面部护理产品", hairPanel: "头发护理", hairPanelDesc: "洗发水 · 护发素 · 头发护理", bodyPanel: "身体护理", bodyPanelDesc: "沐浴露 · 身体精华 · 套装", facePanel: "面部护理", facePanelDesc: "日常护理系列", emptyTitle: "{category}产品准备中", emptyDesc: "目前暂无{category}产品信息，后续将更新。" }, buy: "购买", pendingPrice: "价格待确认" },
     proposal: { metaTitle: "ecoaloe | 出口&合作提案", title: "出口&合作企业产品/商品提案指南", required: "* 必填", companyInfo: "合作企业信息", inquiry: "填写咨询", reset: "重置", complete: "完成" },
   },
   vi: {
     meta: { title: "ecoaloe | Thương hiệu chăm sóc tóc và cơ thể" },
-    nav: { lineup: "Dòng sản phẩm", store: "Cửa hàng", brand: "Thương hiệu", export: "Thị trường xuất khẩu", proposal: "Đề xuất xuất khẩu & hợp tác", allProducts: "Tất cả sản phẩm" },
+    nav: { lineup: "Dòng sản phẩm", viewProducts: "Xem sản phẩm", store: "Cửa hàng", brand: "Thương hiệu", export: "Thị trường xuất khẩu", proposal: "Đề xuất xuất khẩu & hợp tác", allProducts: "Tất cả sản phẩm" },
     home: { hero: { copy: "ecoaloe mang cảm giác dưỡng ẩm tươi mát từ lô hội vào chăm sóc hằng ngày, phát triển thành thương hiệu chăm sóc tóc được thị trường xuất khẩu tìm lại.", viewProducts: "Xem sản phẩm", exportInquiry: "Liên hệ xuất khẩu" }, signature: { more: "Xem thêm" }, film: { title: "Phim<br />thương hiệu" }, support: { title: "Hỗ trợ<br />thương hiệu", label1: "Sản xuất", title1: "Môi trường sản xuất sạch", desc1: "Quản lý vệ sinh nghiêm ngặt và quy trình có hệ thống tạo nên sản phẩm đáng tin cậy.", label2: "Đóng gói", title2: "Hệ thống<br />đóng gói an toàn", desc2: "Bao bì chắc chắn và kiểm tra kỹ giúp giao hàng an toàn trong và ngoài nước.", label3: "Marketing", title3: "Hỗ trợ marketing", desc3: "Hỗ trợ POP, banner và tài liệu quảng bá để cùng phát triển thương hiệu." } },
     store: { hair: "Tóc", hairDesc: "Dầu gội · Dầu xả · Chăm sóc tóc", body: "Cơ thể", bodyDesc: "Sữa tắm · Tinh chất body · Bộ sản phẩm", face: "Mặt", faceDesc: "Dòng chăm sóc hằng ngày", allProducts: "Tất cả sản phẩm", category: { all: "Tất cả", hair: "Tóc", body: "Cơ thể", face: "Mặt", hairTitle: "Sản phẩm tóc", bodyTitle: "Sản phẩm body", faceTitle: "Sản phẩm mặt", hairPanel: "Tóc", hairPanelDesc: "Dầu gội · Dầu xả · Chăm sóc tóc", bodyPanel: "Cơ thể", bodyPanelDesc: "Sữa tắm · Tinh chất body · Bộ sản phẩm", facePanel: "Mặt", facePanelDesc: "Dòng chăm sóc hằng ngày", emptyTitle: "Sản phẩm {category} đang chuẩn bị", emptyDesc: "Hiện chưa có sản phẩm {category}; thông tin sẽ được cập nhật sau." }, buy: "Mua hàng", pendingPrice: "Đang xác nhận giá" },
     proposal: { metaTitle: "ecoaloe | Đề xuất xuất khẩu & hợp tác", title: "Hướng dẫn đề xuất sản phẩm/hàng hóa đối tác", required: "* Bắt buộc", companyInfo: "Thông tin đối tác", inquiry: "Viết nội dung tư vấn", reset: "Đặt lại", complete: "Hoàn tất" },
   },
   th: {
     meta: { title: "ecoaloe | แบรนด์ดูแลเส้นผมและผิวกาย" },
-    nav: { lineup: "ไลน์สินค้า", store: "สโตร์", brand: "แบรนด์", export: "ตลาดส่งออก", proposal: "ข้อเสนอส่งออกและพาร์ตเนอร์", allProducts: "สินค้าทั้งหมด" },
+    nav: { lineup: "ไลน์สินค้า", viewProducts: "ดูสินค้า", store: "สโตร์", brand: "แบรนด์", export: "ตลาดส่งออก", proposal: "ข้อเสนอส่งออกและพาร์ตเนอร์", allProducts: "สินค้าทั้งหมด" },
     home: { hero: { copy: "ecoaloe ถ่ายทอดความสดชื่นของว่านหางจระเข้สู่การดูแลประจำวัน และเติบโตเป็นแบรนด์ดูแลเส้นผมที่ตลาดส่งออกเลือกซ้ำ", viewProducts: "ดูสินค้า", exportInquiry: "ติดต่อส่งออก" }, signature: { more: "ดูเพิ่มเติม" }, film: { title: "แบรนด์<br />ฟิล์ม" }, support: { title: "การสนับสนุน<br />แบรนด์", label1: "การผลิต", title1: "สภาพแวดล้อมการผลิตที่สะอาด", desc1: "การจัดการสุขอนามัยอย่างเข้มงวดและกระบวนการผลิตที่เป็นระบบสร้างสินค้าที่น่าเชื่อถือ", label2: "บรรจุภัณฑ์", title2: "ระบบ<br />บรรจุภัณฑ์ปลอดภัย", desc2: "บรรจุภัณฑ์แข็งแรงและการตรวจสอบละเอียดช่วยให้จัดส่งได้ปลอดภัย", label3: "การตลาด", title3: "สนับสนุนการตลาด", desc3: "สนับสนุน POP แบนเนอร์ และสื่อส่งเสริมการขายเพื่อเติบโตไปด้วยกัน" } },
     store: { hair: "ผม", hairDesc: "แชมพู · คอนดิชันเนอร์ · ดูแลเส้นผม", body: "ผิวกาย", bodyDesc: "คลีนเซอร์ · เอสเซนส์ผิวกาย · เซต", face: "ผิวหน้า", faceDesc: "ไลน์ดูแลประจำวัน", allProducts: "สินค้าทั้งหมด", category: { all: "ทั้งหมด", hair: "ผม", body: "ผิวกาย", face: "ผิวหน้า", hairTitle: "ผลิตภัณฑ์ผม", bodyTitle: "ผลิตภัณฑ์ผิวกาย", faceTitle: "ผลิตภัณฑ์ผิวหน้า", hairPanel: "ผม", hairPanelDesc: "แชมพู · คอนดิชันเนอร์ · ดูแลเส้นผม", bodyPanel: "ผิวกาย", bodyPanelDesc: "คลีนเซอร์ · เอสเซนส์ผิวกาย · เซต", facePanel: "ผิวหน้า", facePanelDesc: "ไลน์ดูแลประจำวัน", emptyTitle: "กำลังเตรียมสินค้า {category}", emptyDesc: "ยังไม่มีสินค้า {category} ที่ลงทะเบียน ข้อมูลจะอัปเดตภายหลัง" }, buy: "ซื้อ", pendingPrice: "รอยืนยันราคา" },
     proposal: { metaTitle: "ecoaloe | ข้อเสนอส่งออกและพาร์ตเนอร์", title: "คู่มือข้อเสนอสินค้า/ผลิตภัณฑ์พาร์ตเนอร์", required: "* จำเป็น", companyInfo: "ข้อมูลบริษัทพาร์ตเนอร์", inquiry: "เขียนคำปรึกษา", reset: "รีเซ็ต", complete: "เสร็จสิ้น" },
   },
   ru: {
     meta: { title: "ecoaloe | Бренд ухода за волосами и телом" },
-    nav: { lineup: "Линейка", store: "Магазин", brand: "Бренд", export: "Экспортные рынки", proposal: "Экспорт и партнерство", allProducts: "Все продукты" },
+    nav: { lineup: "Линейка", viewProducts: "Смотреть продукты", store: "Магазин", brand: "Бренд", export: "Экспортные рынки", proposal: "Экспорт и партнерство", allProducts: "Все продукты" },
     home: { hero: { copy: "ecoaloe сочетает свежую увлажняющую силу алоэ и ежедневный уход, становясь брендом для повторных продаж на экспортных рынках.", viewProducts: "Смотреть продукты", exportInquiry: "Запрос по экспорту" }, signature: { more: "Подробнее" }, film: { title: "Фильм<br />бренда" }, support: { title: "Поддержка<br />бренда", label1: "Производство", title1: "Чистая производственная среда", desc1: "Строгая гигиена и системный процесс производства создают надежные продукты.", label2: "Упаковка", title2: "Безопасная<br />система упаковки", desc2: "Прочная упаковка и тщательная проверка обеспечивают безопасную доставку.", label3: "Маркетинг", title3: "Маркетинговая поддержка", desc3: "Мы поддерживаем POP-материалы, баннеры и рекламные инструменты для роста бренда." } },
     store: { hair: "Волосы", hairDesc: "Шампунь · Кондиционер · Уход", body: "Тело", bodyDesc: "Очищение · Эссенция · Набор", face: "Лицо", faceDesc: "Линейка ежедневного ухода", allProducts: "Все продукты", category: { all: "Все", hair: "Волосы", body: "Тело", face: "Лицо", hairTitle: "Продукты для волос", bodyTitle: "Продукты для тела", faceTitle: "Продукты для лица", hairPanel: "Волосы", hairPanelDesc: "Шампунь · Кондиционер · Уход", bodyPanel: "Тело", bodyPanelDesc: "Очищение · Эссенция · Набор", facePanel: "Лицо", facePanelDesc: "Линейка ежедневного ухода", emptyTitle: "Продукты {category} готовятся", emptyDesc: "Пока нет зарегистрированных продуктов {category}. Информация будет обновлена позже." }, buy: "Купить", pendingPrice: "Цена уточняется" },
     proposal: { metaTitle: "ecoaloe | Экспорт и партнерство", title: "Руководство по предложению продуктов для партнеров", required: "* Обязательно", companyInfo: "Информация о партнере", inquiry: "Форма запроса", reset: "Сброс", complete: "Готово" },
   },
   uz: {
     meta: { title: "ecoaloe | Soch va tana parvarishi brendi" },
-    nav: { lineup: "Mahsulotlar", store: "Do‘kon", brand: "Brend", export: "Eksport bozorlari", proposal: "Eksport va hamkorlik taklifi", allProducts: "Barcha mahsulotlar" },
+    nav: { lineup: "Mahsulotlar", viewProducts: "Mahsulotlarni ko‘rish", store: "Do‘kon", brand: "Brend", export: "Eksport bozorlari", proposal: "Eksport va hamkorlik taklifi", allProducts: "Barcha mahsulotlar" },
     home: { hero: { copy: "ecoaloe aloe namligini kundalik parvarish hissi bilan birlashtirib, eksport bozorlarida qayta izlanadigan soch parvarishi brendiga aylanmoqda.", viewProducts: "Mahsulotlarni ko‘rish", exportInquiry: "Eksport bo‘yicha aloqa" }, signature: { more: "Ko‘proq" }, film: { title: "Brend<br />filmi" }, support: { title: "Brend<br />qo‘llab-quvvatlovi", label1: "Ishlab chiqarish", title1: "Toza ishlab chiqarish muhiti", desc1: "Qattiq gigiyena nazorati va tizimli jarayon ishonchli mahsulot yaratadi.", label2: "Qadoqlash", title2: "Xavfsiz<br />qadoqlash tizimi", desc2: "Mustahkam qadoq va puxta tekshiruv mahsulotni xavfsiz yetkazadi.", label3: "Marketing", title3: "Marketing yordami", desc3: "POP, banner va reklama materiallari bilan brend o‘sishini qo‘llab-quvvatlaymiz." } },
     store: { hair: "Soch", hairDesc: "Shampun · Konditsioner · Soch parvarishi", body: "Tana", bodyDesc: "Tozalagich · Tana essensiyasi · To‘plam", face: "Yuz", faceDesc: "Kundalik parvarish liniyasi", allProducts: "Barcha mahsulotlar", category: { all: "Barchasi", hair: "Soch", body: "Tana", face: "Yuz", hairTitle: "Soch mahsulotlari", bodyTitle: "Tana mahsulotlari", faceTitle: "Yuz mahsulotlari", hairPanel: "Soch", hairPanelDesc: "Shampun · Konditsioner · Soch parvarishi", bodyPanel: "Tana", bodyPanelDesc: "Tozalagich · Tana essensiyasi · To‘plam", facePanel: "Yuz", facePanelDesc: "Kundalik parvarish liniyasi", emptyTitle: "{category} mahsulotlari tayyorlanmoqda", emptyDesc: "Hozircha {category} mahsulotlari yo‘q. Ma’lumot keyin yangilanadi." }, buy: "Xarid qilish", pendingPrice: "Narx aniqlanmoqda" },
     proposal: { metaTitle: "ecoaloe | Eksport va hamkorlik taklifi", title: "Hamkor mahsulot taklifi bo‘yicha qo‘llanma", required: "* Majburiy", companyInfo: "Hamkor kompaniya ma’lumoti", inquiry: "Murojaat shakli", reset: "Tozalash", complete: "Yakunlash" },
