@@ -1,4 +1,3 @@
-const officialMallUrl = "https://roseeshop.com/goods/goods_list.php?cateCd=003003";
 const PRODUCT_LIST_RETURN_KEY = "eco-product-list-return";
 const exportOnlyProductKeys = new Set(["aloeShampoo", "blackGarlic", "arganShampoo", "ginseng"]);
 
@@ -354,8 +353,8 @@ function renderMissingProduct() {
     <div class="detail-empty">
       <span>Eco Aloe</span>
       <h1>제품 정보를 찾을 수 없습니다</h1>
-      <p>스토어에서 제품을 다시 선택해 주세요.</p>
-      <a class="detail-button primary" href="aloe-shampoo.html#catalog">스토어로 돌아가기</a>
+      <p>제품 목록에서 제품을 다시 선택해 주세요.</p>
+      <a class="detail-button primary" href="aloe-shampoo.html#catalog">제품 목록으로 돌아가기</a>
     </div>
   `;
 }
@@ -392,7 +391,7 @@ function renderProductDetail(item) {
         ${
           isExportOnly
             ? `<span class="detail-button primary is-disabled" aria-disabled="true">수출전용상품</span>`
-            : `<a class="detail-button primary" href="${officialMallUrl}" target="_blank" rel="noopener noreferrer">제품 구매하기</a>`
+            : ""
         }
         <a class="detail-button outline" href="${listReturnHref}">목록</a>
         <a class="detail-button outline" href="proposal.html">제품 문의하기</a>
